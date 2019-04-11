@@ -14,7 +14,7 @@ export default props => (
   <div>
     <HighlightContainer>
       <HighlightIcon path={mdiNodejs} />
-      node.js
+      <Stars rating={5} />
     </HighlightContainer>
     <HighlightContainer>
       <HighlightIcon path={mdiLanguageCss3} />

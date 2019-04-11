@@ -10,7 +10,7 @@ import {
   MainSectionHeaderTitleRightContainer,
   MainSectionHeaderTitleRight,
   MainSectionHeaderSubtitleRight,
-  MainSectionHeaderLinkIcon,
+  colors,
 } from '../style';
 
 const getUrlProps = url => {
@@ -30,11 +30,15 @@ const MainSectionHeader = ({
   subtitleLeft,
   subtitleRight,
   rightUrl,
-  style = {},
   leftStyle = {},
   rightStyle = {},
+  className,
+  removeMarginBottom,
 }) => (
-  <MainSectionHeaderContainer style={style}>
+  <MainSectionHeaderContainer
+    className={className}
+    removeMarginBottom={removeMarginBottom}
+  >
     <MainSectionHeaderTitleLeftContainer style={leftStyle}>
       <MainSectionHeaderTitleLeft>{titleLeft}</MainSectionHeaderTitleLeft>
       <MainSectionHeaderSubtitleLeft>

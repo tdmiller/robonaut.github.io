@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import Icon from '@mdi/react';
-import { colors } from './';
+import colors from './colors';
 
 export const ReferenceContainer = styled.div(() => ({
   // borderLeft: `4px solid ${colors.silver}`,

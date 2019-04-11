@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { colors } from './';
+import colors from './colors';
 
 export const SkillSectionContainer = styled.div(({ isFirst = false }) => ({
   marginTop: isFirst ? 0 : '1em',

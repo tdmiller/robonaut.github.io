@@ -1,26 +1,25 @@
 import React from 'react';
-import MainSectionHeader from '../components/MainSectionHeader';
+import { mdiMarker } from '@mdi/js';
 import {
   WorkExperienceContainer,
   WorkExperienceSummary,
   WorkExperienceContentContainer,
   WorkExperienceHighlightContainer,
+  WorkExperienceHighlightIcon,
+  WorkExperienceHighlightText,
+  WorkExperienceHeader,
 } from '../style/work';
 
-const WorkExperienceHighlight = ({ highlight }) => (
-  <WorkExperienceHighlightContainer>
-    {highlight}
+const WorkExperienceHighlight = ({ highlight, isLast }) => (
+  <WorkExperienceHighlightContainer isLast={isLast}>
+    <WorkExperienceHighlightIcon path={mdiMarker} />
+    <WorkExperienceHighlightText>{highlight}</WorkExperienceHighlightText>
   </WorkExperienceHighlightContainer>
 );
 
 const WorkExperience = ({ experience, isFirst }) => (
   <WorkExperienceContainer isFirst={isFirst}>
-    <MainSectionHeader
-      style={{
-        backgroundColor: 'rgba(0,0,0,0.05)',
-        padding: 8,
-        borderRadius: 4,
-      }}
+    <WorkExperienceHeader
       titleLeft={experience.position}
       subtitleLeft={`${experience.startDate} - ${experience.endDate ||
         'present'}`}
@@ -28,13 +27,18 @@ const WorkExperience = ({ experience, isFirst }) => (
       subtitleRight={experience.website}
       rightUrl={experience.website}
     />
-    <WorkExperienceSummary>{experience.summary}</WorkExperienceSummary>
+    <WorkExperienceSummary
+      removeMarginBottom={(experience.highlights || []).length === 0}
+    >
+      {experience.summary}
+    </WorkExperienceSummary>
     {experience.highlights && (
       <WorkExperienceContentContainer>
         {experience.highlights.map((highlight, idx) => (
           <WorkExperienceHighlight
             key={`highligh-${idx}`}
             highlight={highlight}
+            isLast={idx === experience.highlights.length - 1}
           />
         ))}
       </WorkExperienceContentContainer>

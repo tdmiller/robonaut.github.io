@@ -5,8 +5,8 @@ import * as sections from './sections';
 import { MainSectionTitle, Highlights } from './components';
 import {
   MainContainer,
-  LeftContainer,
-  RightContainer,
+  ProfileContainer,
+  SectionsContainer,
   MainSection,
   MainSectionContent,
 } from './style';
@@ -27,26 +27,38 @@ class Resume extends PureComponent {
     return null;
   };
 
+  renderProfile() {
+    return (
+      <ProfileContainer>
+        <sections.Profile
+          profile={this.props.data.basics}
+          languages={this.props.data.languages}
+        >
+          {/* <Highlights /> */}
+        </sections.Profile>
+      </ProfileContainer>
+    );
+  }
+
+  renderSections() {
+    return (
+      <SectionsContainer>
+        {this.renderSection('basics', 'About')}
+        {this.renderSection('work', 'Work')}
+        {this.renderSection('skills', 'Skills')}
+        {this.renderSection('education', 'Education')}
+        {this.renderSection('awards', 'Awards')}
+        {this.renderSection('references', 'References')}
+        {this.renderSection('interests', 'Interests')}
+      </SectionsContainer>
+    );
+  }
+
   render() {
     return (
       <MainContainer>
-        <LeftContainer>
-          <sections.Profile
-            profile={this.props.data.basics}
-            languages={this.props.data.languages}
-          >
-            {/* <Highlights /> */}
-          </sections.Profile>
-        </LeftContainer>
-        <RightContainer>
-          {this.renderSection('basics', 'About')}
-          {this.renderSection('work', 'Work')}
-          {this.renderSection('skills', 'Skills')}
-          {this.renderSection('education', 'Education')}
-          {this.renderSection('awards', 'Awards')}
-          {this.renderSection('references', 'References')}
-          {this.renderSection('interests', 'Interests')}
-        </RightContainer>
+        {this.renderProfile()}
+        {this.renderSections()}
       </MainContainer>
     );
   }

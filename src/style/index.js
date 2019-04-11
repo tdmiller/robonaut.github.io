@@ -1,17 +1,8 @@
 import styled from '@emotion/styled';
 import Icon from '@mdi/react';
+import colors from './colors';
 
-export const colors = {
-  white: '#ffffff',
-  yellow: '#FFDC00',
-  silver: '#DDDDDD',
-  grey: '#AAAAAA',
-  black: '#111111',
-  aqua: '#7FDBFF',
-  blue: '#0074D9',
-  navy: '#001f3f',
-  red: '#FF4136',
-};
+export { colors };
 
 export const MainContainer = styled.div(props => ({
   display: 'flex',
@@ -21,15 +12,18 @@ export const MainContainer = styled.div(props => ({
   backgroundColor: colors.navy,
 }));
 
-export const LeftContainer = styled.div(props => ({
+export const ProfileContainer = styled.div(props => ({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   minWidth: 192,
-  padding: 24,
+  padding: 16,
+  '@media print': {
+    minWidth: 160,
+  },
 }));
 
-export const RightContainer = styled.div(props => ({
+export const SectionsContainer = styled.div(props => ({
   padding: 16,
   backgroundColor: colors.white,
 }));
@@ -38,6 +32,7 @@ export const MainSection = styled.div(props => ({
   display: 'flex',
   flexDirection: 'column',
   color: colors.black,
+  marginRight: 48,
 }));
 
 export const MainSectionTitle = styled.h2(props => ({
@@ -93,7 +88,7 @@ export const Link = styled.a(props => ({
 export const MainSectionHeaderContainer = styled.div(props => ({
   display: 'flex',
   flexDirection: 'row',
-  marginBottom: '1em',
+  marginBottom: props.removeMarginBottom ? 0 : '1em',
 }));
 
 export const MainSectionHeaderTitleLeftContainer = styled.div(props => ({}));
@@ -103,15 +98,18 @@ export const MainSectionHeaderTitleLeft = styled.div(props => ({
   color: colors.navy,
 }));
 
-export const MainSectionHeaderSubtitleLeft = styled.div(props => ({
-  color: colors.grey,
-  fontSize: '0.8em',
-  marginTop: 4,
-  textDecoration: 'none',
-  display: 'flex',
-  flexDirection: 'row',
-  alignItems: 'center',
-}));
+export const MainSectionHeaderSubtitleLeft = styled.div(props => {
+  return {
+    color: colors.grey,
+    fontSize: '0.8em',
+    marginTop: 4,
+    textDecoration: 'none',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    '&:hover': props.href ? { color: colors.blue } : {},
+  };
+});
 
 export const MainSectionHeaderTitleRightContainer = styled.div(props => ({
   marginLeft: '2em',
@@ -147,7 +145,6 @@ export const KeywordContainer = styled.div(({ isLast = false }) => ({
   backgroundColor: colors.navy,
   border: `2px solid ${colors.blue}`,
   color: colors.white,
-  // fontWeight: 'bolder',
   padding: 8,
   borderRadius: 8,
   display: 'flex',
