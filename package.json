@@ -1,0 +1,43 @@
+{
+  "name": "robonaut",
+  "version": "0.0.1",
+  "description": "My online curriculum vitae",
+  "main": "index",
+  "scripts": {
+    "start": "node server --watch --progress",
+    "build-resume": "resume export --theme elegant --format html index.html",
+    "build": "NODE_ENV=production webpack --mode production --config webpack/webpack.config.js --progress --profile --colors",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robonaut/robonaut.github.io.git"
+  },
+  "author": "Ilja Strobbe",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/robonaut/robonaut.github.io.git"
+  },
+  "homepage": "https://cv.robonaut.be",
+  "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/plugin-proposal-class-properties": "7.4.0",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/preset-env": "7.4.3",
+    "@babel/preset-react": "7.0.0",
+    "@babel/register": "7.4.0",
+    "@emotion/core": "10.0.10",
+    "@emotion/styled": "10.0.10",
+    "@mdi/js": "3.5.95",
+    "@mdi/react": "1.1.0",
+    "babel-loader": "8.0.5",
+    "babel-plugin-import": "1.11.0",
+    "html-webpack-plugin": "3.2.0",
+    "prop-types": "15.7.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "webpack": "4.29.6",
+    "webpack-cli": "3.3.0",
+    "webpack-dev-server": "3.3.1"
+  }
+}

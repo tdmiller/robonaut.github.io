@@ -1,0 +1,235 @@
+{
+  "basics": {
+    "name": "Ilja Strobbe",
+    "label": "Software Engineer",
+    "picture": "https://www.robonaut.be/assets/images/cv_profile_picture.jpg",
+    "email": "ilja@robonaut.be",
+    "phone": "+32485799803",
+    "website": "https://cv.robonaut.be",
+    "summary": "Senior software engineer with a background in theoretical physics who specializes in scalable software architecture, performant API’s and beautiful user interfaces. Out of the box thinker who is fluent in a number of programming languages and frameworks and comfortable with both frontend and backend development. Autodidact who learns quickly and is intrinsically motivated to get things done. Excellent communication skills, both verbal and written. Willing to take the initiative when working both individually and as part of a team. Passionate about space travel, big questions, creativity and the fabric of reality. Applies string theory to guitars and pianos.",
+    "location": {
+      "address": "Ciamberlanidreef 72/16",
+      "postalCode": "9120",
+      "city": "Beveren-Waas",
+      "countryCode": "BE",
+      "region": "Oost-Vlaanderen"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "robonaut",
+        "url": "https://github.com/robonaut"
+      },
+      {
+        "network": "twitter",
+        "username": "istrobes",
+        "url": "https://twitter.com/istrobes"
+      },
+      {
+        "network": "linkedin",
+        "username": "iljastrobbe",
+        "url": "https://be.linkedin.com/in/iljastrobbe"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Sentiance",
+      "position": "Senior Full Stack Engineer",
+      "website": "https://www.sentiance.com",
+      "startDate": "2018/04/10",
+      "summary": "Sentiance is a data science company turning IOT sensor data into rich insights about people’s behavior and real-time context. These insights enable companies to understand how customers go through their everyday lives, discover and anticipate the moments that matter most, and adapt their engagement to real-world behavior and real-time context.",
+      "highlights": [
+        "Developed graphQL API and Postgres datamodel to acommodate user coaching. Apache Kafka integration with other micro-services, AWS Pinpoint integration for push notifications.",
+        "I was responsible for the complete rewrite of the Sentiance Journeys app which embeds their proprietary tracking SDK. Bridged native SDK's for android and iOS to React Native. Animated interactive map views using MapboxGL native. Custom animations and data visualistions on top of a GraphQL API interface. 100% Test coverage."
+      ]
+    },
+    {
+      "company": "Small Town Heroes",
+      "position": "Full Stack Hero",
+      "website": "https://www.smalltownheroes.be",
+      "startDate": "2012/05/01",
+      "endDate": "2018/04/10",
+      "summary": "Small Town Heroes is a Ghent based startup that provides software tools and services for broadcaster and publishers with a focus on mobile video experiences and user interactions.",
+      "highlights": [
+        "I was responsible for the design and implementation of scalable backend services, high traffic websites, API's and CMS interfaces for a variety of (live) TV shows. I took care of the full release cycle of the services - from concept to production releases - with an eye for quality, detail and user experience. My area of expertise essentially covered their complete technology stack ranging from server deploys to UI tweaks. While continuously learning I gained expert knowledge of and hands-on experience with Amazon Web Services, Node.js and its ecosystem, serverless architectures, RESTful dockerized web services, NoSQL data stores and a plethora of frontend development frameworks like react and react-native."
+      ]
+    },
+    {
+      "company": "iMinds",
+      "position": "R&D Engineer",
+      "website": "https://www.iminds.be",
+      "startDate": "2012/01/01",
+      "endDate": "2012/04/30",
+      "summary": "iMinds is Flanders’ digital research & entrepreneurship hub. We drive digital innovation for society and economy, through strategic and applied research on key digital technologies."
+    },
+    {
+      "company": "VRT Medialab",
+      "position": "R&D Engineer",
+      "website": "https://innovatie.vrt.be",
+      "startDate": "2009/01/01",
+      "endDate": "2012/01/01",
+      "summary": "VRT-medialab is the technological research department of VRT, Flanders’ public service broadcaster. VRT-medialab carries out research into the creation, management and distribution of media content. Its focus is on the Flemish media market, but VRT-medialab pursues collaboration on a European and worldwide level. ",
+      "highlights": [
+        "MediaSquare: Development of a chat application (Ruby, Redis, PostgreSQL) used during live broadcasts of 'Villa Vanthilt'.",
+        "DIVA: Design and implementation of a (BPMN, SOA, JAVA) solution for archiving and annotating the historical tape archive at VRT.",
+        "SMPTE: Writing an IEE publication: Taking File-Based Workflows to the Next Level: Project and Timeline Based Integrations."
+      ]
+    },
+    {
+      "company": "Spector Photogroup",
+      "position": "Application Logic Tests",
+      "website": "https://www.smartphoto.be",
+      "startDate": "2007/09/01",
+      "endDate": "2008/12/31",
+      "summary": "As an application tester I got the chance to review all the code and database queries of the 'SmartPhoto' platform thereby gaining hands-on experience with an international commercial platform coded in .NET #C and MS SQL. I was also responsible for testing all the websites and to file internal bug reports. Later on I developed a tool in C# for testing photo orders that was used internally by the test team.",
+      "highlights": [
+        "Developed an internal test tool in C# used to verify the correct generation of photo product orders."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "UGent",
+      "area": "Applied Information Technology",
+      "studyType": "Master",
+      "startDate": "2006/10/01",
+      "endDate": "2007/08/31",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "UGent",
+      "area": "Theoretical Physics",
+      "studyType": "Master",
+      "startDate": "2002/10/01",
+      "endDate": "2006/06/30",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "IBC Innovation Award for Content Management",
+      "date": "2016/09/01"
+    },
+    {
+      "title": "IAB Mixx-award: Zapp Tekenapp",
+      "date": "2014/02/01"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Taking File-Based Workflows to the Next Level: Project and Timeline Based Integrations",
+      "publisher": "SMPTE",
+      "releaseDate": "2009/10/27",
+      "website": "https://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=7269125&filter%3DAND(p_IS_Number%3A7269114)",
+      "summary": "This paper explores state-of-the-art techniques for exchanging project and timeline information with and between major post production suites and pinpoints the present shortcomings and bottlenecks."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming languages",
+      "keywords": [
+        "Javascript (node.js)",
+        "Python",
+        "Java",
+        "Ruby"
+      ]
+    },
+    {
+      "name": "Data stores",
+      "keywords": [
+        "PostgreSQL",
+        "DynamoDB",
+        "MySQL",
+        "Elasticsearch",
+        "MongoDB",
+        "Redis"
+      ]
+    },
+    {
+      "name": "Services & Libraries",
+      "keywords": [
+        "Amazon Web Services",
+        "Github",
+        "Pusher",
+        "Circle CI",
+        "Datadog",
+        "Logentries",
+        "Fabric",
+        "Crashlytics",
+        "Slack",
+        "ImageMagick",
+        "FFMPEG"
+      ]
+    },
+    {
+      "name": "Web & Native",
+      "keywords": [
+        "Koa.js",
+        "React.js",
+        "React Native",
+        "Express.js",
+        "Socket.io",
+        "Pusher.js",
+        "Backbone.js",
+        "Mocha.js",
+        "D3.js",
+        "OAuth2",
+        "ES6",
+        "HTML5",
+        "CSS3"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Dutch",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Good"
+    },
+    {
+      "language": "French",
+      "fluency": "Moderate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Music",
+      "keywords": [
+        "Guitar",
+        "Piano",
+        "Producing",
+        "DJ"
+      ]
+    },
+    {
+      "name": "Sports",
+      "keywords": [
+        "Cycling",
+        "Running",
+        "Snowboarding",
+        "Soccer"
+      ]
+    },
+    {
+      "name": "Fun",
+      "keywords": [
+        "Live Music",
+        "Ted Talks",
+        "Movies"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Wouter Smet",
+      "reference": "I've had the pleasure of studying for my M. Sc. in physics together with Ilja, including many group assignments, and having his sharp mind and inspiring creativity around consistently made it more pleasant to Get Things Done"
+    }
+  ]
+}
