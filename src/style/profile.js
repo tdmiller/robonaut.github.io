@@ -3,7 +3,7 @@ import Icon from '@mdi/react';
 import colors from './colors';
 
 export const ProfileContent = styled.div(props => ({
-  // position: 'fixed',
+  position: 'fixed',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',

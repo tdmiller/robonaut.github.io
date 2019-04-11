@@ -12,6 +12,7 @@ const School = (
     subtitleLeft={`${startDate} - ${endDate}`}
     titleRight={institution}
     subtitleRight="https://ugent.be"
+    rightUrl="https://ugent.be"
     removeMarginBottom={isLast}
   />
 );
