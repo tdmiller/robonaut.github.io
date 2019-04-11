@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server --watch --progress",
     "build-resume": "resume export --theme elegant --format html index.html",
-    "build": "NODE_ENV=production webpack --mode production --config webpack/webpack.config.js --progress --profile --colors",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "build": "NODE_ENV=production webpack --mode production --config webpack/webpack.config.js --progress --profile --colors && cp CNAME dist/",
+    "deploy": "git subtree push --prefix dist origin master"
   },
   "repository": {
     "type": "git",
