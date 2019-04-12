@@ -10,7 +10,7 @@ export const MainContainer = styled.div(props => ({
   flex: 1,
   minHeight: '100vh',
   '@media print': {
-    minHeight: '300vh',
+    minHeight: '200vh',
   },
 }));
 
