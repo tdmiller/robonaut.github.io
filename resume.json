@@ -129,8 +129,42 @@
   ],
   "skills": [
     {
-      "name": "Programming languages",
-      "keywords": ["Javascript (node.js)", "Python", "Java", "Ruby"]
+      "name": "Software Development",
+      "keywords": [
+        "Microservices",
+        "TDD",
+        "CI/CD",
+        "Scrum",
+        "Web Development",
+        "Mobile Application Development",
+        "Database Design"
+      ]
+    },
+    {
+      "name": "Technologie & Frameworks",
+      "keywords": [
+        "React",
+        "React Native",
+        "NodeJS",
+        "Koa.js",
+        "Express",
+        "Websockets",
+        "FFMPEG",
+        "ImageMagick",
+        "Apache Kafka"
+      ]
+    },
+    {
+      "name": "Data Stores",
+      "keywords": ["PostgreSQL", "MySQL", "Redis", "DynamoDB", "Elasticsearch"]
+    },
+    {
+      "name": "Continuous Integration",
+      "keywords": ["Jenkins", "CircleCI", "Docker", "Nomad", "Git", "Fastlane"]
+    },
+    {
+      "name": "Programming Languages",
+      "keywords": ["Javascript", "Java", "Python", "Ruby", "HTML/CSS"]
     }
   ],
   "languages": [
@@ -147,7 +181,20 @@
       "fluency": "Moderate"
     }
   ],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Music",
+      "keywords": ["Guitar", "Piano", "Producing", "DJ"]
+    },
+    {
+      "name": "Sports",
+      "keywords": ["Cycling", "Running", "Snowboarding", "Soccer"]
+    },
+    {
+      "name": "Fun",
+      "keywords": ["Live Music", "Ted Talks", "Movies"]
+    }
+  ],
   "references": [
     {
       "name": "Wouter Smet",

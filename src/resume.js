@@ -12,11 +12,11 @@ import {
 } from './style';
 
 class Resume extends PureComponent {
-  renderSection = (key, title) => {
+  renderSection = (key, title, isLast = false) => {
     const Component = sections[`${key[0].toUpperCase()}${key.slice(1)}`];
     if (Component) {
       return (
-        <MainSection key={`section-${key}`} sectionKey={key}>
+        <MainSection key={`section-${key}`} sectionKey={key} isLast={isLast}>
           <MainSectionTitle icon={key} title={title} />
           <MainSectionContent>
             <Component data={this.props.data[key]} />
@@ -49,7 +49,7 @@ class Resume extends PureComponent {
         {this.renderSection('education', 'Education')}
         {this.renderSection('awards', 'Awards')}
         {this.renderSection('references', 'References')}
-        {this.renderSection('interests', 'Interests')}
+        {this.renderSection('interests', 'Interests', true)}
       </SectionsContainer>
     );
   }

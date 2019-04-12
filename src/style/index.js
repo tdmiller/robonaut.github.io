@@ -9,7 +9,9 @@ export const MainContainer = styled.div(props => ({
   flexDirection: 'row',
   flex: 1,
   minHeight: '100vh',
-  backgroundColor: colors.navy,
+  '@media print': {
+    minHeight: '300vh',
+  },
 }));
 
 export const ProfileContainer = styled.div(props => ({
@@ -20,6 +22,7 @@ export const ProfileContainer = styled.div(props => ({
   padding: 16,
   '@media print': {
     minWidth: 160,
+    backgroundColor: colors.navy,
   },
 }));
 
@@ -33,6 +36,7 @@ export const MainSection = styled.div(props => ({
   flexDirection: 'column',
   color: colors.black,
   marginRight: 48,
+  marginBottom: '1em',
 }));
 
 export const MainSectionTitle = styled.h2(props => ({
@@ -139,14 +143,17 @@ export const KeywordsContainer = styled.div(() => ({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
+  marginBottom: -8,
 }));
 
 export const KeywordContainer = styled.div(({ isLast = false }) => ({
-  backgroundColor: colors.navy,
-  border: `2px solid ${colors.blue}`,
-  color: colors.white,
-  padding: 8,
-  borderRadius: 8,
+  backgroundColor: colors.whiteDarker,
+  marginBottom: 8,
+  // border: `1px solid ${colors.blue}`,
+  color: colors.blue,
+  padding: `0px 4px 0px 4px`,
+  fontWeight: 'bold',
+  borderRadius: 4,
   display: 'flex',
   flexDirection: 'row',
   marginRight: isLast ? 0 : 8,
