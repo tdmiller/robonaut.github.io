@@ -32,6 +32,7 @@ const configuration = {
       title: 'Robonaut',
       filename: 'index.html',
       template: 'src/index.html',
+      favicon: 'src/favicon.ico',
       app,
       style,
       inject: true,
