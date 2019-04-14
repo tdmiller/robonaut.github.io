@@ -18,6 +18,7 @@ import {
   mdiLinkedinBox,
   mdiTwitterCircle,
   mdiEmailOutline,
+  mdiSoundcloud,
 } from '@mdi/js';
 
 const languageStars = {
@@ -35,6 +36,7 @@ const Profile = ({ profile = {}, languages = [], children }) => {
     linkedin: mdiLinkedinBox,
     twitter: mdiTwitterCircle,
     email: mdiEmailOutline,
+    soundcloud: mdiSoundcloud,
   };
   return (
     <ProfileContent>

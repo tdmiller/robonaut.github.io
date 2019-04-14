@@ -71,8 +71,8 @@
       "endDate": "2012/01/01",
       "summary": "VRT-medialab is the technological research department of VRT, Flanders’ public service broadcaster. VRT-medialab carries out research into the creation, management and distribution of media content. Its focus is on the Flemish media market, but VRT-medialab pursues collaboration on a European and worldwide level. ",
       "highlights": [
-        "I was part of the development team that launched one of the first second-screen applications (Ruby, Redis, PostgreSQL) for use during a live TV show for a major broadcaster. In the hours before launching I fixed a critical performance issue.",
-        "In my first year I wrote an IEE publication for SMPTE (Society of Motion Picture & Television Engineers): \"Taking File-Based Workflows to the Next Level: Project and Timeline Based Integrations.\""
+        "I was part of the development team that launched one of the first second-screen applications (Ruby, Redis, PostgreSQL) for a live TV show. In the hours before launching I fixed a critical performance issue.",
+        "In my first year I wrote and presented an IEE publication for SMPTE (Society of Motion Picture & Television Engineers): \"Taking File-Based Workflows to the Next Level: Project and Timeline Based Integrations.\""
       ]
     },
     {
@@ -137,7 +137,7 @@
         "Scrum",
         "Web Development",
         "Mobile Application Development",
-        "API design",
+        "API Design",
         "Database Design"
       ]
     },
@@ -189,7 +189,7 @@
   "interests": [
     {
       "name": "Music",
-      "keywords": ["Guitar", "Piano", "Producing", "DJ"]
+      "keywords": ["Guitar", "Piano", "Producing"]
     },
     {
       "name": "Sports",
