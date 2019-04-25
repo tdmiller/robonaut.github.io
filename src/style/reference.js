@@ -2,9 +2,10 @@ import styled from '@emotion/styled';
 import Icon from '@mdi/react';
 import colors from './colors';
 
-export const ReferenceContainer = styled.div(() => ({
+export const ReferenceContainer = styled.div(({ isLast }) => ({
   // borderLeft: `4px solid ${colors.silver}`,
   // paddingLeft: 8,
+  marginBottom: isLast ? 0 : 24,
 }));
 
 export const ReferenceText = styled.div(() => ({}));

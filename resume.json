@@ -202,6 +202,10 @@
   ],
   "references": [
     {
+      "name": "Patrick Debois",
+      "reference": "Ilja is the canonical example of \"Mens sana in corpore sano\". He gracefully lived through the rough times of an early startup: designing scalable architecture, developing it and ... also running it. Over the years I've seen him evolve to a professional cloud native with a great hunger for new things but with enough pragmatism to deliver your product without the worries. Allrounder skilled in AWS, Mobile, Modern Web and data algorithms, I can only recommend him and envy you when you hire him."
+    },
+    {
       "name": "Wouter Smet",
       "reference": "I've had the pleasure of studying for my M. Sc. in physics together with Ilja, including many group assignments, and having his sharp mind and inspiring creativity around consistently made it more pleasant to Get Things Done"
     }

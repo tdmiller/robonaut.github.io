@@ -8,8 +8,8 @@ import {
 import Icon from '@mdi/react';
 import { mdiFormatQuoteOpen, mdiFormatQuoteClose } from '@mdi/js';
 
-const Reference = (reference, idx) => (
-  <ReferenceContainer key={`reference-${idx}`}>
+const Reference = (reference, idx, isLast) => (
+  <ReferenceContainer key={`reference-${idx}`} isLast={isLast}>
     <ReferenceText>
       <ReferenceQuoteIcon path={mdiFormatQuoteOpen} />
       {reference.reference}
@@ -19,6 +19,9 @@ const Reference = (reference, idx) => (
   </ReferenceContainer>
 );
 
-const References = ({ data = [] }) => data.map(Reference);
+const References = ({ data = [] }) =>
+  data.map((reference, idx) =>
+    Reference(reference, idx, idx === data.length - 1)
+  );
 
 export default References;
