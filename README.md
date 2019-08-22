@@ -12,4 +12,8 @@ $ npm start
 
 ## Build the website for github pages
 
-$ make build
+$ npm run build
+
+## Deploy to github pages
+
+$ npm run deploy
