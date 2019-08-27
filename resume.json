@@ -40,8 +40,8 @@
       "startDate": "2018/04/10",
       "summary": "Sentiance is a data science company turning IOT sensor data into rich insights about people’s behavior and real-time context. These insights enable companies to understand how customers go through their everyday lives, discover and anticipate the moments that matter most, and adapt their engagement to real-world behavior and real-time context.",
       "highlights": [
-        "To accomodate a newly conceived coaching platform, I wrote the graphQL API and the database design (PostgreSQL) and together with our team I integrated this API with other internal services (Apache Kafka). We also made a new flavor of the mobile app to showcase the added coaching capabilities.",
-        "My first task upon arriving was a complete rewrite of the Sentiance demo app (Journeys) which embeds their proprietary tracking SDK. Therefore we bridged the native SDK's for android and iOS to React Native. We created a brand new app (React Native, Redux) and added animated interactive map views (Mapbox) together with custom animations and data visualisations, powered by a GraphQL API interface. I also created a CI/CD pipeline that automated distributing multiple flavors of their app (and sdk) enforcing 98% test coverage."
+        "To create a new contextual (driver) coaching platform, I wrote the graphQL API and created the database design (PostgreSQL) and together with our team I integrated this API with other internal services (Apache Kafka). We also made a new flavor of the mobile app to showcase the added coaching capabilities.",
+        "My first task at Sentiance was a complete rewrite of the Sentiance demo app (Journeys) which embeds their proprietary tracking SDK. Therefore we bridged the native SDK's for android and iOS to React Native. We created a brand new app (React Native, Redux) and added animated interactive map views (Mapbox) together with custom animations and data visualisations, powered by a GraphQL API interface. I also created a CI/CD pipeline that automated distributing multiple flavors of their app (and sdk) enforcing 98% test coverage."
       ]
     },
     {
@@ -52,7 +52,8 @@
       "endDate": "2018/04/10",
       "summary": "Small Town Heroes is a Ghent based startup that provides software tools and services for broadcaster and publishers with a focus on mobile video experiences and user interactions.",
       "highlights": [
-        "I was responsible for the design and implementation of scalable backend services, high traffic websites, API's and CMS interfaces for a variety of (live) TV shows. I took care of the full release cycle of the services - from concept to production releases - with an eye for quality, detail and user experience. My area of expertise essentially covered their complete technology stack ranging from server deploys to UI tweaks. While continuously learning I gained expert knowledge of and hands-on experience with Amazon Web Services, Node.js and its ecosystem, serverless architectures, RESTful dockerized web services, NoSQL data stores and a plethora of frontend development frameworks like react and react-native."
+        "I was responsible for the design and implementation of scalable backend services, high traffic websites, API's and CMS interfaces for a variety of (live) TV shows. I took care of the full release cycle of the services - from concept to production releases - with an eye for quality, detail and user experience. My area of expertise essentially covered the complete technology stack ranging from architectural design to server deploys and UI tweaks. While continuously learning I gained expert knowledge of and hands-on experience with Amazon Web Services, Node.js and its ecosystem, serverless architectures, RESTful dockerized web services, NoSQL data stores and a plethora of frontend development frameworks like react and react-native.",
+        "I was a major contributor on a lot of API's and mobile applications: Ketnet, Studio 100, Blokken, Eurosong, De Ridder, De Rijdende Rechter, Ook Getest Op Mensen, Het Spiegelpaleis, The Passion, ..."
       ]
     },
     {
@@ -147,6 +148,7 @@
         "NodeJS",
         "Koa.js",
         "Express",
+        "TypeScript",
         "React",
         "React Native",
         "Redux",
@@ -169,7 +171,7 @@
     },
     {
       "name": "Programming Languages",
-      "keywords": ["Javascript", "Java", "Python", "Ruby", "HTML/CSS"]
+      "keywords": ["Javascript", "Java", "Python", "Ruby", "HTML/CSS", "PHP"]
     }
   ],
   "languages": [
