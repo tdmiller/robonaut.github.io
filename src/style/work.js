@@ -12,7 +12,7 @@ export const WorkExperienceContainer = styled.div(({ isFirst = false }) => ({
 
 export const WorkExperienceSummary = styled.div(props => ({
   fontSize: '0.8em',
-  marginBottom: props.removeMarginBottom ? 0 : '2em',
+  marginBottom: props.removeMarginBottom ? 0 : '1em',
   fontStyle: 'italic',
 }));
 

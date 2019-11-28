@@ -1,5 +1,5 @@
+import About from './about';
 import Awards from './awards';
-import Basics from './basics';
 import Education from './education';
 import Interests from './interests';
 import Profile from './Profile';
@@ -10,8 +10,8 @@ import Volunteer from './volunteer';
 import Work from './work';
 
 export {
+  About,
   Profile,
-  Basics,
   Work,
   Volunteer,
   Education,

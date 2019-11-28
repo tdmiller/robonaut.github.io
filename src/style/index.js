@@ -7,38 +7,24 @@ export { colors };
 
 export const MainContainer = styled.div(() => ({
   display: 'flex',
-  flexDirection: 'row',
-  flex: 1,
-  minHeight: '100vh',
-  '@media print': {
-    minHeight: '200vh',
-  },
-}));
-
-export const ProfileContainer = styled.div(() => ({
-  display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
-  minWidth: 192,
-  padding: 16,
-  '@media print': {
-    minWidth: 160,
-    backgroundColor: colors.navy,
-  },
+  minHeight: '100vh',
 }));
 
 export const SectionsContainer = styled.div(() => ({
-  padding: 16,
   backgroundColor: colors.white,
+  padding: '112px 16px 16px 16px', // heider height 80 + header padding 16 + own padding 16
+  '@media print': {
+    paddingTop: 16,
+  },
+  zIndex: 0,
 }));
 
 export const MainSection = styled.div(() => ({
   display: 'flex',
   flexDirection: 'column',
   color: colors.black,
-  marginRight: 48,
   marginBottom: '1em',
-  pageBreakInside: 'avoid',
 }));
 
 export const MainSectionTitle = styled.h2(() => ({
@@ -95,6 +81,7 @@ export const MainSectionHeaderContainer = styled.div(props => ({
   display: 'flex',
   flexDirection: 'row',
   marginBottom: props.removeMarginBottom ? 0 : '1em',
+  pageBreakInside: 'avoid',
 }));
 
 export const MainSectionHeaderTitleLeftContainer = styled.div(() => ({}));

@@ -11,9 +11,7 @@ module.exports = options => {
     hot: true,
     inline: true,
     stats: 'errors-only',
-    // watchOptions: {
-    // 	ignored: /ui/,
-    // },
+    open: true,
   };
   return new WebpackDevServer(
     webpack(config),

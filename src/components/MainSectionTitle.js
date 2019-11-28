@@ -13,7 +13,7 @@ import React from 'react';
 import { MainSectionTitle, MainSectionTitleIcon } from '../style';
 
 const iconMap = {
-  basics: mdiAccountCardDetails,
+  about: mdiAccountCardDetails,
   work: mdiDomain,
   skills: mdiCodeTagsCheck,
   education: mdiSchool,

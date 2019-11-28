@@ -4,7 +4,7 @@
   "description": "My online curriculum vitae",
   "main": "index",
   "scripts": {
-    "start": "node server --watch --progress",
+    "start": "node server --watch --progress --open",
     "build": "NODE_ENV=production webpack --mode production --config webpack/webpack.config.js --progress --profile --colors && cp CNAME dist/",
     "deploy": "git subtree push --prefix dist origin master",
     "lint": "eslint --ext .jsx,.js ./src/",

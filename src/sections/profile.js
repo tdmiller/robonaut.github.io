@@ -1,7 +1,9 @@
 import {
   mdiEmailOutline,
   mdiGithubCircle,
+  mdiHomeMapMarker,
   mdiLinkedinBox,
+  mdiPhone,
   mdiSoundcloud,
   mdiTwitterCircle,
 } from '@mdi/js';
@@ -13,15 +15,16 @@ import {
   Avatar,
   JobTitle,
   Name,
+  ProfileContactContainer,
+  ProfileContactIcon,
+  ProfileContactLink,
   ProfileContent,
-  ProfileEmail,
-  ProfileEmailIcon,
-  ProfileEmailLink,
-  ProfileIcon,
   ProfileLanguage,
   ProfileLanguages,
   ProfileLinks,
+  ProfileStars,
 } from '../style/profile';
+import { ProfileContainer } from '../style/profile';
 
 const languageStars = {
   Native: 5,
@@ -31,49 +34,88 @@ const languageStars = {
   Beginner: 1,
 };
 
-const Profile = ({ profile = {}, languages = [], children }) => {
-  const { picture = '', name = '', label = '', profiles = [], email } = profile;
+const Profile = ({ profile = {}, languages = [] }) => {
+  const {
+    picture = '',
+    name = '',
+    label = '',
+    location = {},
+    profiles = [],
+    email,
+  } = profile;
   const iconPaths = {
     github: mdiGithubCircle,
     linkedin: mdiLinkedinBox,
     twitter: mdiTwitterCircle,
     email: mdiEmailOutline,
     soundcloud: mdiSoundcloud,
+    address: mdiHomeMapMarker,
+    phone: mdiPhone,
   };
 
-  return (
+  const renderLinks = () => (
+    <ProfileLinks>
+      {profiles.map(profile => (
+        <ProfileContactLink
+          key={`profile-${profile.network}</ProfileLinks>]}`}
+          href={`mailto:${email}`}
+        >
+          <ProfileContactIcon path={iconPaths[profile.network]} />
+          {profile.url.split('/').slice(-1)[0]}
+        </ProfileContactLink>
+      ))}
+    </ProfileLinks>
+  );
+
+  const renderMe = () => (
     <ProfileContent>
-      <Avatar src={picture} radius={20} />
       <Name>{name}</Name>
       <JobTitle>{label}</JobTitle>
-      <ProfileLinks>
-        {profiles.map(profile => (
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            key={`link-${profile.network}`}
-            href={profile.url}
-          >
-            <ProfileIcon path={iconPaths[profile.network]} />
-          </a>
-        ))}
-      </ProfileLinks>
-      <ProfileEmail>
-        <ProfileEmailLink href={`mailto:${email}`}>
-          <ProfileEmailIcon path={iconPaths.email} />
-          {email}
-        </ProfileEmailLink>
-      </ProfileEmail>
+    </ProfileContent>
+  );
+
+  const renderContact = () => (
+    <ProfileContactContainer>
+      <ProfileContactLink href={`mailto:${email}`}>
+        <ProfileContactIcon path={iconPaths.email} />
+        {email}
+      </ProfileContactLink>
+      <ProfileContactLink href={location.link} target="_blank">
+        <ProfileContactIcon path={iconPaths.address} />
+        {location.address}, {location.postalCode} {location.city} (
+        {location.countryCode})
+      </ProfileContactLink>
+    </ProfileContactContainer>
+  );
+
+  const renderLanguages = () => (
+    <>
       <ProfileLanguages>
         {languages.map(l => (
           <ProfileLanguage key={`language-${l.language}`}>
             {l.language}
-            <Stars rating={languageStars[l.fluency]} />
           </ProfileLanguage>
         ))}
       </ProfileLanguages>
-      {children}
-    </ProfileContent>
+      <ProfileStars>
+        {languages.map(l => (
+          <Stars
+            key={`language-${l.language}-stars`}
+            rating={languageStars[l.fluency]}
+          />
+        ))}
+      </ProfileStars>
+    </>
+  );
+
+  return (
+    <ProfileContainer>
+      <Avatar src={picture} radius={10} />
+      {renderMe()}
+      {renderContact()}
+      {renderLinks()}
+      {renderLanguages()}
+    </ProfileContainer>
   );
 };
 

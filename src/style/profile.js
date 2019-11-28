@@ -3,36 +3,54 @@ import Icon from '@mdi/react';
 
 import colors from './colors';
 
-export const ProfileContent = styled.div(() => ({
-  position: 'fixed',
+const HEADER_SPACING = '2em';
+
+const profileHeaderColumn = {
+  marginLeft: HEADER_SPACING,
+  height: '4em',
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
-}));
+  justifyContent: 'space-between',
+};
 
-export const ProfileLinks = styled.div(() => ({
+export const ProfileContainer = styled.div(() => ({
   display: 'flex',
   flexDirection: 'row',
-  alignItems: 'center',
-  marginTop: 8,
-}));
-
-export const ProfileIcon = styled(Icon)(() => ({
-  margin: 8,
-  width: '2em',
-  fill: colors.white,
-  '&:hover': {
-    fill: colors.blue,
+  width: '100%',
+  height: 80,
+  position: 'fixed',
+  '@media print': {
+    position: 'relative',
+    height: 70,
   },
-}));
-
-export const ProfileEmail = styled.div(() => ({
-  display: 'flex',
-  flexDirection: 'row',
+  backgroundColor: colors.navy,
   alignItems: 'center',
+  padding: 16,
+  zIndex: 1,
 }));
 
-export const ProfileEmailLink = styled.a(() => ({
+export const ProfileContent = styled.div(() => ({
+  ...profileHeaderColumn,
+}));
+
+export const Name = styled.div(() => ({
+  color: colors.white,
+  fontWeight: 'bold',
+  fontSize: '1.6em',
+  whiteSpace: 'nowrap',
+}));
+
+export const JobTitle = styled.div(() => ({
+  color: colors.white,
+  fontSize: '1em',
+}));
+
+export const ProfileContactContainer = styled.div(() => ({
+  ...profileHeaderColumn,
+}));
+
+export const ProfileContactLink = styled.a(() => ({
+  margin: '2px 0',
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
@@ -44,33 +62,39 @@ export const ProfileEmailLink = styled.a(() => ({
   },
 }));
 
-export const ProfileEmailIcon = styled(Icon)(() => ({
+export const ProfileContactIcon = styled(Icon)(() => ({
   fill: colors.silver,
-  width: '1em',
+  width: '2em',
   marginRight: 4,
+  marginTop: '0.2em',
+}));
+
+export const ProfileContactAddress = styled.div(() => ({
+  margin: '2px 0',
+}));
+
+export const ProfileLinks = styled.div(() => ({
+  ...profileHeaderColumn,
+}));
+
+export const ProfileIcon = styled(Icon)(() => ({
+  width: '1.6em',
+  marginTop: '0.5em',
+  fill: colors.white,
+  '&:hover': {
+    fill: colors.blue,
+  },
 }));
 
 export const Avatar = styled.img(props => ({
   borderRadius: `${props.radius}mm`,
   width: `${props.radius * 2}mm`,
   height: `${props.radius * 2}mm`,
-}));
-
-export const Name = styled.h2(() => ({
-  color: colors.white,
-  marginTop: 36,
-  marginBottom: 8,
-  textAlign: 'center',
-}));
-
-export const JobTitle = styled.div(() => ({
-  color: colors.silver,
-  textAlign: 'center',
+  flexGrow: 'none',
 }));
 
 export const ProfileLanguages = styled.div(() => ({
-  width: '100%',
-  margin: 24,
+  ...profileHeaderColumn,
 }));
 
 export const ProfileLanguage = styled.div(() => ({
@@ -80,7 +104,17 @@ export const ProfileLanguage = styled.div(() => ({
   color: colors.silver,
 }));
 
+export const ProfileStars = styled.div(() => ({
+  ...profileHeaderColumn,
+  marginLeft: '1em',
+  minWidth: '5em',
+}));
+
 export const ProfileHighlights = styled.div(() => ({
   display: 'flex',
   flexDirection: 'row',
+}));
+
+export const ProfileAbout = styled.div(() => ({
+  color: colors.white,
 }));

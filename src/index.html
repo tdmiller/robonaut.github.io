@@ -10,16 +10,18 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
     <style>
       body {
-        background-color: #001f3f;
         margin: 0px;
         font-family: 'Open Sans', sans-serif;
         font-display: auto;
+        font-size: 0.8em
       }
       @media print {
         body {
           -webkit-print-color-adjust: exact;
-          font-size: 68%;
-          height: '100%';
+        }
+        .page-break {
+          display: block;
+          page-break-after: always;
         }
       }
     </style>

@@ -1,5 +1,5 @@
 {
-  "basics": {
+  "about": {
     "name": "Ilja Strobbe",
     "label": "Software Engineer",
     "picture": "https://www.robonaut.be/assets/images/cv_profile_picture.jpeg",
@@ -12,7 +12,8 @@
       "postalCode": "9120",
       "city": "Beveren-Waas",
       "countryCode": "BE",
-      "region": "Oost-Vlaanderen"
+      "region": "Oost-Vlaanderen",
+      "link": "https://goo.gl/maps/3F36vsk3AcPn2KT38"
     },
     "profiles": [
       {
@@ -37,7 +38,7 @@
       "highlights": [
         {
           "title": "Aaqua",
-          "summary": "I led a team of 5 full stack engineers to create a new fandom centric social network concept. I was responsible for delivering a brand new mobile app (TypeScript, Redux, Apollo) and a public graphQL API (TypeScript, Koa, Apollo) backed by a Neo4j graph database. In both frontend and backend projects we attained 100% code coverage and a continuous CICD pipeline delivering multiple automated deploys every day. This way our team was consistently able to support an ever growing feature set (social login, following, friending, commenting, picture upload, notifications, ...)"
+          "summary": "I led a team of 5 full stack engineers to create a new fandom centric social network. I was responsible for delivering a brand new mobile app (TypeScript, Redux, Apollo) and a public graphQL API (TypeScript, Koa, Apollo) backed by a Neo4j graph database. In both frontend and backend projects we attained 100% code coverage and a continuous CICD pipeline delivering multiple automated deploys every day. This way our team was consistently able to support an ever growing feature set (social login, following, friending, commenting, picture upload, notifications, ...)"
         },
         {
           "title": "Driver Coaching",

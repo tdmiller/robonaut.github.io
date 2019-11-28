@@ -8,7 +8,6 @@ import {
   MainContainer,
   MainSection,
   MainSectionContent,
-  ProfileContainer,
   SectionsContainer,
 } from './style';
 
@@ -32,22 +31,21 @@ class Resume extends PureComponent {
 
   renderProfile() {
     return (
-      <ProfileContainer>
-        <sections.Profile
-          profile={this.props.data.basics}
-          languages={this.props.data.languages}
-        ></sections.Profile>
-      </ProfileContainer>
+      <sections.Profile
+        profile={this.props.data.about}
+        languages={this.props.data.languages}
+      ></sections.Profile>
     );
   }
 
   renderSections() {
     return (
       <SectionsContainer>
-        {this.renderSection('basics', 'About')}
+        {this.renderSection('about', 'About')}
         {this.renderSection('work', 'Work')}
         {this.renderSection('skills', 'Skills')}
         {this.renderSection('education', 'Education')}
+        <div className="page-break" />
         {this.renderSection('awards', 'Awards')}
         {this.renderSection('references', 'References')}
         {this.renderSection('interests', 'Interests', true)}
