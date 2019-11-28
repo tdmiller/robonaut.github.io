@@ -152,17 +152,20 @@
         "Microservices",
         "TDD",
         "CI/CD",
-        "Scrum",
         "Web Development",
         "Mobile Application Development",
+        "Scalable Software",
         "API Design",
-        "Database Design"
+        "Database Design",
+        "Serverless",
+        "NoSQL",
+        "Scrum"
       ]
     },
     {
       "name": "Technologie & Frameworks",
       "keywords": [
-        "NodeJS",
+        "Node.js",
         "Koa.js",
         "Express",
         "TypeScript",
@@ -183,12 +186,16 @@
       "keywords": ["PostgreSQL", "MySQL", "Redis", "DynamoDB", "Elasticsearch", "Neo4j"]
     },
     {
-      "name": "Continuous Integration",
-      "keywords": ["Jenkins", "CircleCI", "Docker", "Nomad", "Git", "Fastlane"]
+      "name": "Continuous Integration & Deployment",
+      "keywords": ["AWS", "Jenkins", "CircleCI", "Docker", "Nomad", "Git"]
     },
     {
       "name": "Programming Languages",
-      "keywords": ["Javascript", "Java", "Python", "Ruby", "HTML/CSS", "PHP"]
+      "keywords": ["Javascript", "Python", "Java", "Ruby", "HTML/CSS", "PHP"]
+    },
+    {
+      "name": "Mobile Applications",
+      "keywords": ["Android Studio", "XCode", "Fastlane", "React Native Bridging", "Build Schemes & Flavors", "Push Notifications", "Analytics", "Mobile SDK's"]
     }
   ],
   "languages": [

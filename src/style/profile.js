@@ -102,6 +102,7 @@ export const ProfileLanguage = styled.div(() => ({
   flexDirection: 'row',
   justifyContent: 'space-between',
   color: colors.silver,
+  fontSize: '0.8em',
 }));
 
 export const ProfileStars = styled.div(() => ({
