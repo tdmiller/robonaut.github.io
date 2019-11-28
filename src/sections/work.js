@@ -1,21 +1,47 @@
-import React from 'react';
 import { mdiMarker } from '@mdi/js';
+import PropTypes from 'prop-types';
+import React from 'react';
+
 import {
   WorkExperienceContainer,
-  WorkExperienceSummary,
   WorkExperienceContentContainer,
-  WorkExperienceHighlightContainer,
-  WorkExperienceHighlightIcon,
-  WorkExperienceHighlightText,
   WorkExperienceHeader,
+  WorkExperienceHighlightContainer,
+  WorkExperienceHighlightContentContainer,
+  WorkExperienceHighlightIcon,
+  WorkExperienceHighlightLink,
+  WorkExperienceHighlightText,
+  WorkExperienceHighlightTitle,
+  WorkExperienceSummary,
 } from '../style/work';
 
 const WorkExperienceHighlight = ({ highlight, isLast }) => (
   <WorkExperienceHighlightContainer isLast={isLast}>
     <WorkExperienceHighlightIcon path={mdiMarker} />
-    <WorkExperienceHighlightText>{highlight}</WorkExperienceHighlightText>
+    <WorkExperienceHighlightContentContainer>
+      <WorkExperienceHighlightTitle>
+        {highlight.title}
+        {highlight.link && (
+          <WorkExperienceHighlightLink href={highlight.link} target="_blank">
+            [link]
+          </WorkExperienceHighlightLink>
+        )}
+      </WorkExperienceHighlightTitle>
+      <WorkExperienceHighlightText>
+        {highlight.summary}
+      </WorkExperienceHighlightText>
+    </WorkExperienceHighlightContentContainer>
   </WorkExperienceHighlightContainer>
 );
+
+WorkExperienceHighlight.propTypes = {
+  highlight: PropTypes.shape({
+    title: PropTypes.string,
+    summary: PropTypes.string,
+    link: PropTypes.string,
+  }),
+  isLast: PropTypes.bool,
+};
 
 const WorkExperience = ({ experience, isFirst }) => (
   <WorkExperienceContainer isFirst={isFirst}>
@@ -46,6 +72,19 @@ const WorkExperience = ({ experience, isFirst }) => (
   </WorkExperienceContainer>
 );
 
+WorkExperience.propTypes = {
+  experience: PropTypes.shape({
+    position: PropTypes.string,
+    summary: PropTypes.string,
+    startDate: PropTypes.string,
+    endDate: PropTypes.string,
+    company: PropTypes.string,
+    website: PropTypes.string,
+    highlights: PropTypes.arrayOf(WorkExperienceHighlight.propTypes.highlight),
+  }),
+  isFirst: PropTypes.bool,
+};
+
 const Work = ({ data: experiences }) =>
   experiences.map((experience, idx) => (
     <WorkExperience
@@ -54,5 +93,9 @@ const Work = ({ data: experiences }) =>
       isFirst={idx === 0}
     />
   ));
+
+Work.propTypes = {
+  data: PropTypes.arrayOf(WorkExperience.propTypes.experience),
+};
 
 export default Work;

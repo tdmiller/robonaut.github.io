@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Publications = props => <div>Publications</div>;
+const Publications = () => <div>Publications</div>;
 
 export default Publications;

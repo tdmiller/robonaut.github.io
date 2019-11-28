@@ -1,6 +1,6 @@
-import MainSectionTitle from './MainSectionTitle';
 import Highlights from './Highlights';
-import Stars from './Stars';
 import MainSectionHeader from './MainSectionHeader';
+import MainSectionTitle from './MainSectionTitle';
+import Stars from './Stars';
 
 export { MainSectionTitle, Highlights, Stars, MainSectionHeader };

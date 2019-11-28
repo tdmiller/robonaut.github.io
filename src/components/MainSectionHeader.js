@@ -1,26 +1,25 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import { mdiOpenInNew } from '@mdi/js';
+import React from 'react';
 
 import {
   MainSectionHeaderContainer,
-  MainSectionHeaderTitleLeftContainer,
-  MainSectionHeaderTitleLeft,
   MainSectionHeaderSubtitleLeft,
-  MainSectionHeaderTitleRightContainer,
-  MainSectionHeaderTitleRight,
   MainSectionHeaderSubtitleRight,
-  colors,
+  MainSectionHeaderTitleLeft,
+  MainSectionHeaderTitleLeftContainer,
+  MainSectionHeaderTitleRight,
+  MainSectionHeaderTitleRightContainer,
 } from '../style';
 
 const getUrlProps = url => {
-  if (url != null) {
+  if (url) {
     return {
       as: 'a',
       href: url,
       target: '__blank',
     };
   }
+
   return null;
 };
 
@@ -64,6 +63,9 @@ MainSectionHeader.propTypes = {
   style: PropTypes.object,
   leftStyle: PropTypes.object,
   rightStyle: PropTypes.object,
+  rightUrl: PropTypes.string,
+  className: PropTypes.string,
+  removeMarginBottom: PropTypes.bool,
 };
 
 export default MainSectionHeader;

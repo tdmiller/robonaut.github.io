@@ -1,25 +1,27 @@
+import {
+  mdiEmailOutline,
+  mdiGithubCircle,
+  mdiLinkedinBox,
+  mdiSoundcloud,
+  mdiTwitterCircle,
+} from '@mdi/js';
+import PropTypes from 'prop-types';
 import React from 'react';
+
+import { Stars } from '../components';
 import {
   Avatar,
-  Name,
   JobTitle,
+  Name,
   ProfileContent,
-  ProfileLinks,
-  ProfileIcon,
   ProfileEmail,
   ProfileEmailIcon,
   ProfileEmailLink,
-  ProfileLanguages,
+  ProfileIcon,
   ProfileLanguage,
+  ProfileLanguages,
+  ProfileLinks,
 } from '../style/profile';
-import { Stars } from '../components';
-import {
-  mdiGithubCircle,
-  mdiLinkedinBox,
-  mdiTwitterCircle,
-  mdiEmailOutline,
-  mdiSoundcloud,
-} from '@mdi/js';
 
 const languageStars = {
   Native: 5,
@@ -38,6 +40,7 @@ const Profile = ({ profile = {}, languages = [], children }) => {
     email: mdiEmailOutline,
     soundcloud: mdiSoundcloud,
   };
+
   return (
     <ProfileContent>
       <Avatar src={picture} radius={20} />
@@ -45,7 +48,12 @@ const Profile = ({ profile = {}, languages = [], children }) => {
       <JobTitle>{label}</JobTitle>
       <ProfileLinks>
         {profiles.map(profile => (
-          <a target="_blank" key={`link-${profile.network}`} href={profile.url}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            key={`link-${profile.network}`}
+            href={profile.url}
+          >
             <ProfileIcon path={iconPaths[profile.network]} />
           </a>
         ))}
@@ -67,6 +75,17 @@ const Profile = ({ profile = {}, languages = [], children }) => {
       {children}
     </ProfileContent>
   );
+};
+
+Profile.propTypes = {
+  profile: PropTypes.object,
+  languages: PropTypes.arrayOf(
+    PropTypes.shape({
+      language: PropTypes.string,
+      fluency: PropTypes.string,
+    })
+  ),
+  children: PropTypes.elementType,
 };
 
 export default Profile;

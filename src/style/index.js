@@ -1,10 +1,11 @@
 import styled from '@emotion/styled';
 import Icon from '@mdi/react';
+
 import colors from './colors';
 
 export { colors };
 
-export const MainContainer = styled.div(props => ({
+export const MainContainer = styled.div(() => ({
   display: 'flex',
   flexDirection: 'row',
   flex: 1,
@@ -14,7 +15,7 @@ export const MainContainer = styled.div(props => ({
   },
 }));
 
-export const ProfileContainer = styled.div(props => ({
+export const ProfileContainer = styled.div(() => ({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -26,20 +27,21 @@ export const ProfileContainer = styled.div(props => ({
   },
 }));
 
-export const SectionsContainer = styled.div(props => ({
+export const SectionsContainer = styled.div(() => ({
   padding: 16,
   backgroundColor: colors.white,
 }));
 
-export const MainSection = styled.div(props => ({
+export const MainSection = styled.div(() => ({
   display: 'flex',
   flexDirection: 'column',
   color: colors.black,
   marginRight: 48,
   marginBottom: '1em',
+  pageBreakInside: 'avoid',
 }));
 
-export const MainSectionTitle = styled.h2(props => ({
+export const MainSectionTitle = styled.h2(() => ({
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
@@ -48,7 +50,7 @@ export const MainSectionTitle = styled.h2(props => ({
   marginLeft: 48,
 }));
 
-export const MainSectionTitleIcon = styled(Icon)(props => ({
+export const MainSectionTitleIcon = styled(Icon)(() => ({
   marginRight: 16,
   marginLeft: -48,
   width: '1.2em',
@@ -56,14 +58,14 @@ export const MainSectionTitleIcon = styled(Icon)(props => ({
   opacity: 0.8,
 }));
 
-export const MainSectionContent = styled.div(props => ({
+export const MainSectionContent = styled.div(() => ({
   display: 'flex',
   flexDirection: 'column',
   color: colors.black,
   marginLeft: 48,
 }));
 
-export const HighlightContainer = styled.div(props => ({
+export const HighlightContainer = styled.div(() => ({
   display: 'flex',
   alignItems: 'center',
 }));
@@ -95,9 +97,9 @@ export const MainSectionHeaderContainer = styled.div(props => ({
   marginBottom: props.removeMarginBottom ? 0 : '1em',
 }));
 
-export const MainSectionHeaderTitleLeftContainer = styled.div(props => ({}));
+export const MainSectionHeaderTitleLeftContainer = styled.div(() => ({}));
 
-export const MainSectionHeaderTitleLeft = styled.div(props => ({
+export const MainSectionHeaderTitleLeft = styled.div(() => ({
   fontWeight: 'bold',
   color: colors.navy,
 }));
@@ -115,25 +117,25 @@ export const MainSectionHeaderSubtitleLeft = styled.div(props => {
   };
 });
 
-export const MainSectionHeaderTitleRightContainer = styled.div(props => ({
+export const MainSectionHeaderTitleRightContainer = styled.div(() => ({
   marginLeft: '2em',
 }));
 
-export const MainSectionHeaderTitleRight = styled.div(props => ({
+export const MainSectionHeaderTitleRight = styled.div(() => ({
   color: colors.blue,
   fontWeight: 'bold',
   display: 'block',
   textDecoration: 'none',
 }));
 
-export const MainSectionHeaderTitleRightLink = styled.a(props => ({
+export const MainSectionHeaderTitleRightLink = styled.a(() => ({
   color: colors.blue,
   fontWeight: 'bold',
 }));
 
 export const MainSectionHeaderSubtitleRight = MainSectionHeaderSubtitleLeft;
 
-export const MainSectionHeaderLinkIcon = styled(Icon)(props => ({
+export const MainSectionHeaderLinkIcon = styled(Icon)(() => ({
   fill: colors.grey,
   width: '1em',
   marginLeft: '1em',

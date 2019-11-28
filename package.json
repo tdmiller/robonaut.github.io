@@ -7,7 +7,9 @@
     "start": "node server --watch --progress",
     "build-resume": "resume export --theme elegant --format html index.html",
     "build": "NODE_ENV=production webpack --mode production --config webpack/webpack.config.js --progress --profile --colors && cp CNAME dist/",
-    "deploy": "git subtree push --prefix dist origin master"
+    "deploy": "git subtree push --prefix dist origin master",
+    "lint": "eslint --ext .jsx,.js ./src/",
+    "lint:fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
@@ -20,24 +22,36 @@
   },
   "homepage": "https://cv.robonaut.be",
   "devDependencies": {
-    "@babel/core": "7.5.5",
-    "@babel/plugin-proposal-class-properties": "7.5.5",
-    "@babel/plugin-syntax-dynamic-import": "7.2.0",
-    "@babel/preset-env": "7.5.5",
-    "@babel/preset-react": "7.0.0",
-    "@babel/register": "7.5.5",
-    "@emotion/core": "10.0.16",
-    "@emotion/styled": "10.0.15",
-    "@mdi/js": "4.2.95",
+    "@babel/core": "7.7.4",
+    "@babel/plugin-proposal-class-properties": "7.7.4",
+    "@babel/plugin-syntax-dynamic-import": "7.7.4",
+    "@babel/preset-env": "7.7.4",
+    "@babel/preset-react": "7.7.4",
+    "@babel/register": "7.7.4",
+    "@emotion/core": "10.0.22",
+    "@emotion/styled": "10.0.23",
+    "@mdi/js": "4.6.95",
     "@mdi/react": "1.2.1",
     "babel-loader": "8.0.6",
-    "babel-plugin-import": "1.12.0",
+    "babel-plugin-import": "1.13.0",
+    "eslint": "6.7.1",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-react": "7.16.0",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-simple-import-sort": "5.0.0",
     "html-webpack-plugin": "3.2.0",
+    "husky": "3.1.0",
+    "prettier": "1.19.1",
     "prop-types": "15.7.2",
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
-    "webpack": "4.39.3",
-    "webpack-cli": "3.3.7",
-    "webpack-dev-server": "3.8.0"
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.9.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix"
+    }
   }
 }

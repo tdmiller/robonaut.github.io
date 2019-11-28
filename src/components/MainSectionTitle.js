@@ -1,14 +1,16 @@
-import React from 'react';
-import { MainSectionTitle, MainSectionTitleIcon } from '../style';
 import {
   mdiAccountCardDetails,
-  mdiDomain,
   mdiCodeTagsCheck,
-  mdiSchool,
-  mdiTrophyAward,
-  mdiThumbUp,
+  mdiDomain,
   mdiHeart,
+  mdiSchool,
+  mdiThumbUp,
+  mdiTrophyAward,
 } from '@mdi/js';
+import PropTypes from 'prop-types';
+import React from 'react';
+
+import { MainSectionTitle, MainSectionTitleIcon } from '../style';
 
 const iconMap = {
   basics: mdiAccountCardDetails,
@@ -20,9 +22,18 @@ const iconMap = {
   interests: mdiHeart,
 };
 
-export default ({ title, icon }) => (
-  <MainSectionTitle>
-    <MainSectionTitleIcon path={iconMap[icon]} />
-    {title}
-  </MainSectionTitle>
-);
+function renderMainSectionTitle({ title, icon }) {
+  return (
+    <MainSectionTitle>
+      <MainSectionTitleIcon path={iconMap[icon]} />
+      {title}
+    </MainSectionTitle>
+  );
+}
+
+renderMainSectionTitle.propTypes = {
+  title: PropTypes.string,
+  icon: PropTypes.string,
+};
+
+export default renderMainSectionTitle;

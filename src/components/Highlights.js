@@ -1,16 +1,17 @@
-import React from 'react';
-import { HighlightIcon, HighlightContainer } from '../style';
-import Stars from './Stars';
 import {
+  mdiAmazon,
   mdiLanguageCss3,
-  mdiNodejs,
   mdiLanguageHtml5,
   mdiLanguagePython,
+  mdiNodejs,
   mdiRuby,
-  mdiAmazon,
 } from '@mdi/js';
+import React from 'react';
 
-export default props => (
+import { HighlightContainer, HighlightIcon } from '../style';
+import Stars from './Stars';
+
+export default () => (
   <div>
     <HighlightContainer>
       <HighlightIcon path={mdiNodejs} />

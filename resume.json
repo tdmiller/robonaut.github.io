@@ -6,7 +6,7 @@
     "email": "ilja@robonaut.be",
     "phone": "+32485799803",
     "website": "https://cv.robonaut.be",
-    "summary": "Software engineer with a background in theoretical physics who specializes in scalable software architecture, performant API’s and beautiful user interfaces. Out of the box thinker who is fluent in a number of programming languages and frameworks and comfortable with both frontend and backend development. Autodidact who learns quickly and is intrinsically motivated to get things done. Excellent communication skills, both verbal and written. Willing to take the initiative when working both individually and as part of a team. Passionate about space travel, big questions, creativity and the fabric of reality. Applies string theory to guitars and pianos.",
+    "summary": "Software engineer with a background in theoretical physics who specializes in scalable software architecture, performant API’s and beautiful user interfaces. Out of the box thinker who is fluent in a number of programming languages and frameworks and comfortable with both frontend and backend development. Autodidact who learns quickly and is intrinsically motivated to get things done. Excellent communication skills, both verbal and written. Willing to take the initiative when working both individually and as part of a team. Proven track record of delivering well executed solutions in high performance environments. Passionate about space travel, big questions, creativity and the fabric of reality. Applies string theory to guitars and pianos.",
     "location": {
       "address": "Ciamberlanidreef 72/16",
       "postalCode": "9120",
@@ -19,11 +19,6 @@
         "network": "github",
         "username": "robonaut",
         "url": "https://github.com/robonaut"
-      },
-      {
-        "network": "twitter",
-        "username": "istrobes",
-        "url": "https://twitter.com/istrobes"
       },
       {
         "network": "linkedin",
@@ -40,8 +35,19 @@
       "startDate": "2018/04/10",
       "summary": "Sentiance is a data science company turning IOT sensor data into rich insights about people’s behavior and real-time context. These insights enable companies to understand how customers go through their everyday lives, discover and anticipate the moments that matter most, and adapt their engagement to real-world behavior and real-time context.",
       "highlights": [
-        "To create a new contextual (driver) coaching platform, I wrote the graphQL API and created the database design (PostgreSQL) and together with our team I integrated this API with other internal services (Apache Kafka). We also made a new flavor of the mobile app to showcase the added coaching capabilities.",
-        "My first task at Sentiance was a complete rewrite of the Sentiance demo app (Journeys) which embeds their proprietary tracking SDK. Therefore we bridged the native SDK's for android and iOS to React Native. We created a brand new app (React Native, Redux) and added animated interactive map views (Mapbox) together with custom animations and data visualisations, powered by a GraphQL API interface. I also created a CI/CD pipeline that automated distributing multiple flavors of their app (and sdk) enforcing 98% test coverage."
+        {
+          "title": "Aaqua",
+          "summary": "I led a team of 5 full stack engineers to create a new fandom centric social network concept. I was responsible for delivering a brand new mobile app (TypeScript, Redux, Apollo) and a public graphQL API (TypeScript, Koa, Apollo) backed by a Neo4j graph database. In both frontend and backend projects we attained 100% code coverage and a continuous CICD pipeline delivering multiple automated deploys every day. This way our team was consistently able to support an ever growing feature set (social login, following, friending, commenting, picture upload, notifications, ...)"
+        },
+        {
+          "title": "Driver Coaching",
+          "summary": "To create a new contextual (driver) coaching platform, I wrote the graphQL API and created the database design (PostgreSQL). Together with our team I integrated this API with other internal services by using Apache Kafka as a messaging layer. We also created a brand new mobile app with in app coaching messages and we added push notifications and several gamification features to showcase the Sentiance Drive Coaching capabilities."
+        },
+        {
+          "title": "Journeys",
+          "link": "https://www.sentiance.com/demo",
+          "summary": "My first task at Sentiance was a complete rewrite of the Sentiance demo app (Journeys) which embeds their proprietary tracking SDK. Therefore we bridged the native SDK's for android and iOS to React Native. We created a brand new app (React Native, Redux) and added animated interactive map views (Mapbox) together with custom animations and data visualisations, powered by a GraphQL API interface. I also created a CI/CD pipeline that automated distributing multiple flavors of their app (and sdk) enforcing 98% test coverage."
+        }
       ]
     },
     {
@@ -52,8 +58,12 @@
       "endDate": "2018/04/10",
       "summary": "Small Town Heroes is a Ghent based startup that provides software tools and services for broadcaster and publishers with a focus on mobile video experiences and user interactions.",
       "highlights": [
-        "I was responsible for the design and implementation of scalable backend services, high traffic websites, API's and CMS interfaces for a variety of (live) TV shows. I took care of the full release cycle of the services - from concept to production releases - with an eye for quality, detail and user experience. My area of expertise essentially covered the complete technology stack ranging from architectural design to server deploys and UI tweaks. While continuously learning I gained expert knowledge of and hands-on experience with Amazon Web Services, Node.js and its ecosystem, serverless architectures, RESTful dockerized web services, NoSQL data stores and a plethora of frontend development frameworks like react and react-native.",
-        "I was a major contributor on a lot of API's and mobile applications: Ketnet, Studio 100, Blokken, Eurosong, De Ridder, De Rijdende Rechter, Ook Getest Op Mensen, Het Spiegelpaleis, The Passion, ..."
+        {
+          "summary": "I was responsible for the design and implementation of scalable backend services, high traffic websites, API's and CMS interfaces for a variety of (live) TV shows. I took care of the full release cycle of the services - from concept to production releases - with an eye for quality, detail and user experience. My area of expertise essentially covered their complete technology stack ranging from architectural design to server deploys and UI tweaks. While continuously and actively learning I gained expert knowledge of and hands-on experience with Amazon Web Services, Node.js and its ecosystem, serverless architectures, RESTful dockerized web services, SQL and NoSQL data stores and a plethora of frontend development frameworks like backbone.js, react and react-native."
+        },
+        {
+          "summary": "I was a major contributor on most API's and mobile applications for television shows: Ketnet, Studio 100, Blokken, Eurosong, De Ridder, De Rijdende Rechter, Ook Getest Op Mensen, Het Spiegelpaleis, The Passion, ..."
+        }
       ]
     },
     {
@@ -72,8 +82,12 @@
       "endDate": "2012/01/01",
       "summary": "VRT-medialab is the technological research department of VRT, Flanders’ public service broadcaster. VRT-medialab carries out research into the creation, management and distribution of media content. Its focus is on the Flemish media market, but VRT-medialab pursues collaboration on a European and worldwide level. ",
       "highlights": [
-        "I was part of the development team that launched one of the first second-screen applications (Ruby, Redis, PostgreSQL) for a live TV show. In the hours before launching I fixed a critical performance issue.",
-        "In my first year I wrote and presented an IEE publication for SMPTE (Society of Motion Picture & Television Engineers): \"Taking File-Based Workflows to the Next Level: Project and Timeline Based Integrations.\""
+        {
+          "summary": "I was part of the development team that launched one of the first second-screen applications (Ruby, Redis, PostgreSQL) for a live TV show. In the hours before going live on air I fixed a critical performance issue."
+        },
+        {
+          "summary": "I wrote and presented an IEE publication for SMPTE (Society of Motion Picture & Television Engineers): \"Taking File-Based Workflows to the Next Level: Project and Timeline Based Integrations.\""
+        }
       ]
     },
     {
@@ -84,7 +98,9 @@
       "endDate": "2008/12/31",
       "summary": "SmartPhoto is one of the leading providers of photo service in Europe; and is dedicated to making beautiful Photo products. Our intuitive web platform helps you share your pictures, and create stunning Photo products.",
       "highlights": [
-        "As an application tester I reviewed the code and database queries and gained hands-on experience with an international commercial platform coded in .NET #C and MS SQL. I also developed an internal tool in C# for validating photo orders."
+        {
+          "summary": "As an application tester I reviewed the code and database queries and gained hands-on experience with an international commercial platform coded in .NET #C and MS SQL. I also developed an internal tool in C# for validating photo orders."
+        }
       ]
     }
   ],
@@ -163,7 +179,7 @@
     },
     {
       "name": "Data Stores",
-      "keywords": ["PostgreSQL", "MySQL", "Redis", "DynamoDB", "Elasticsearch"]
+      "keywords": ["PostgreSQL", "MySQL", "Redis", "DynamoDB", "Elasticsearch", "Neo4j"]
     },
     {
       "name": "Continuous Integration",

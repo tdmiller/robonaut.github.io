@@ -13,6 +13,7 @@ if (module.hot) {
 
 // Render
 const renderFn = process.env.NODE_ENV === 'production' ? 'hydrate' : 'render';
+
 ReactDom[renderFn](
   <Resume data={resumeData} />,
   document.getElementById('app')

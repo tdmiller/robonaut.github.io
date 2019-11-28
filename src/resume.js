@@ -1,22 +1,24 @@
+import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import { renderToString } from 'react-dom/server';
-import PropTypes from 'prop-types';
+
+import { MainSectionTitle } from './components';
 import * as sections from './sections';
-import { MainSectionTitle, Highlights } from './components';
 import {
   MainContainer,
-  ProfileContainer,
-  SectionsContainer,
   MainSection,
   MainSectionContent,
+  ProfileContainer,
+  SectionsContainer,
 } from './style';
 
 class Resume extends PureComponent {
-  renderSection = (key, title, isLast = false) => {
+  renderSection(key, title, isLast) {
     const Component = sections[`${key[0].toUpperCase()}${key.slice(1)}`];
+
     if (Component) {
       return (
-        <MainSection key={`section-${key}`} sectionKey={key} isLast={isLast}>
+        <MainSection key={`section-${key}`} sectionKey={key} isLast={!!isLast}>
           <MainSectionTitle icon={key} title={title} />
           <MainSectionContent>
             <Component data={this.props.data[key]} />
@@ -24,8 +26,9 @@ class Resume extends PureComponent {
         </MainSection>
       );
     }
+
     return null;
-  };
+  }
 
   renderProfile() {
     return (
@@ -33,9 +36,7 @@ class Resume extends PureComponent {
         <sections.Profile
           profile={this.props.data.basics}
           languages={this.props.data.languages}
-        >
-          {/* <Highlights /> */}
-        </sections.Profile>
+        ></sections.Profile>
       </ProfileContainer>
     );
   }
@@ -72,5 +73,6 @@ Resume.propTypes = {
 
 export const renderHtml = data => {
   const app = renderToString(<Resume data={data} />);
+
   return { app };
 };

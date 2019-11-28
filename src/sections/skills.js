@@ -1,5 +1,6 @@
 import React from 'react';
-import { KeywordsContainer, KeywordContainer, Keyword } from '../style';
+
+import { Keyword, KeywordContainer, KeywordsContainer } from '../style';
 import { SkillSectionContainer, SkillSectionTitle } from '../style/skills';
 
 export const KeyWord = (word, idx, totalWords) => (

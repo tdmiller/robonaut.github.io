@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import React from 'react';
+
 import MainSectionHeader from '../components/MainSectionHeader';
 
 const School = (
@@ -16,6 +18,14 @@ const School = (
     removeMarginBottom={isLast}
   />
 );
+
+School.propTypes = {
+  institution: PropTypes.string,
+  area: PropTypes.string,
+  studyType: PropTypes.string,
+  startDate: PropTypes.string,
+  endDate: PropTypes.string,
+};
 
 const Education = ({ data = [] }) =>
   data.map((d, idx) => School(d, idx, idx === data.length - 1));

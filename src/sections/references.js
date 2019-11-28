@@ -1,12 +1,12 @@
+import { mdiFormatQuoteClose, mdiFormatQuoteOpen } from '@mdi/js';
 import React from 'react';
+
 import {
   ReferenceContainer,
-  ReferenceText,
   ReferenceName,
   ReferenceQuoteIcon,
+  ReferenceText,
 } from '../style/reference';
-import Icon from '@mdi/react';
-import { mdiFormatQuoteOpen, mdiFormatQuoteClose } from '@mdi/js';
 
 const Reference = (reference, idx, isLast) => (
   <ReferenceContainer key={`reference-${idx}`} isLast={isLast}>
