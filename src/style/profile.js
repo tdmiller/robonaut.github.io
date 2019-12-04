@@ -3,7 +3,7 @@ import Icon from '@mdi/react';
 
 import colors from './colors';
 
-export const HEADER_HEIGHT = '7rem';
+export const HEADER_HEIGHT = '8rem';
 export const HEADER_PADDING = '1rem';
 
 const HEADER_SPACING = '2rem';
@@ -38,7 +38,7 @@ export const ProfileContent = styled.div(() => ({
 export const Name = styled.div(() => ({
   color: colors.white,
   fontWeight: 'bold',
-  fontSize: '1.2rem',
+  fontSize: '1.5rem',
   whiteSpace: 'nowrap',
 }));
 
@@ -51,8 +51,9 @@ export const ProfileContactContainer = styled.div(() => ({
   ...profileHeaderColumn,
 }));
 
-export const ProfileContactLink = styled.a(() => ({
+export const ProfileContactLink = styled.a(props => ({
   margin: '2px 0',
+  marginLeft: props.addMargin ? '2em' : 0,
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
@@ -75,7 +76,8 @@ export const ProfileContactAddress = styled.div(() => ({
 }));
 
 export const ProfileLinks = styled.div(() => ({
-  ...profileHeaderColumn,
+  display: 'flex',
+  flexDirection: 'row',
 }));
 
 export const ProfileIcon = styled(Icon)(() => ({
@@ -87,10 +89,10 @@ export const ProfileIcon = styled(Icon)(() => ({
   },
 }));
 
-export const Avatar = styled.img(props => ({
-  borderRadius: `${props.radius}mm`,
-  width: `${props.radius * 2}mm`,
-  height: `${props.radius * 2}mm`,
+export const Avatar = styled.img(() => ({
+  borderRadius: '2.5em',
+  width: '5em',
+  height: '5em',
   flexGrow: 'none',
 }));
 

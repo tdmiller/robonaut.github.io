@@ -11,7 +11,6 @@ export const MAIN_PADDING = '1rem';
 export const MainContainer = styled.div(() => ({
   display: 'flex',
   flexDirection: 'column',
-  minHeight: '100vh',
 }));
 
 export const SectionsContainer = styled.div(() => ({
@@ -19,7 +18,7 @@ export const SectionsContainer = styled.div(() => ({
   zIndex: 0,
   padding: `calc(${HEADER_HEIGHT} + 1rem) 2rem`,
   '@media print': {
-    paddingTop: 0,
+    paddingTop: '1rem',
   },
 }));
 
@@ -32,19 +31,17 @@ export const MainSection = styled.div(() => ({
 
 export const MainSectionTitle = styled.div(() => ({
   display: 'flex',
-  margin: '0.5rem 0rem 0.5rem 1.5rem',
+  margin: '1rem 0',
   flexDirection: 'row',
   alignItems: 'center',
-  fontSize: '1.2rem',
+  fontSize: '1.5rem',
   fontWeight: 'bold',
-  borderBottom: `1px solid ${colors.silver}`,
   color: colors.navy,
 }));
 
 export const MainSectionTitleIcon = styled(Icon)(() => ({
-  marginLeft: '-1.5rem',
   marginRight: '0.5rem',
-  width: '1rem',
+  width: '1.5rem',
   fill: colors.navy,
   opacity: 0.8,
 }));
@@ -83,6 +80,9 @@ export const Link = styled.a(props => ({
 
 export const MainSectionHeaderContainer = styled.div(props => ({
   display: 'flex',
+  backgroundColor: colors.whiteDarker,
+  padding: 8,
+  borderRadius: 4,
   flexDirection: 'row',
   marginBottom: props.removeMarginBottom ? 0 : '1rem',
   pageBreakInside: 'avoid',
@@ -137,18 +137,14 @@ export const KeywordsContainer = styled.div(() => ({
   flexDirection: 'row',
   flexWrap: 'wrap',
   marginBottom: -8,
+  marginLeft: 8,
 }));
 
 export const KeywordContainer = styled.div(({ isLast = false }) => ({
-  backgroundColor: colors.whiteDarker,
   marginBottom: 8,
   color: colors.blue,
-  padding: `0px 4px 0px 4px`,
   fontWeight: 'bold',
-  borderRadius: 4,
-  display: 'flex',
-  flexDirection: 'row',
-  marginRight: isLast ? 0 : 8,
+  marginRight: isLast ? 0 : '1rem',
 }));
 
 export const Keyword = styled.div``;

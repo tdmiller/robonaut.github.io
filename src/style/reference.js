@@ -4,19 +4,17 @@ import Icon from '@mdi/react';
 import colors from './colors';
 
 export const ReferenceContainer = styled.div(({ isLast }) => ({
-  // borderLeft: `4px solid ${colors.silver}`,
-  // paddingLeft: 8,
   marginBottom: isLast ? 0 : 24,
 }));
 
 export const ReferenceText = styled.div(() => ({}));
 
 export const ReferenceName = styled.div(() => ({
-  // fontStyle: 'italic',
   fontWeight: 'bold',
   color: colors.blue,
-  display: 'inline-block',
-  marginLeft: '1em',
+  display: 'block',
+  marginTop: 8,
+  marginLeft: 0,
 }));
 
 export const ReferenceQuoteIcon = styled(Icon)(() => ({

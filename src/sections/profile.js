@@ -55,11 +55,12 @@ const Profile = ({ profile = {}, languages = [] }) => {
 
   const renderLinks = () => (
     <ProfileLinks>
-      {profiles.map(profile => (
+      {profiles.map((profile, profileIdx) => (
         <ProfileContactLink
           key={`profile-${profile.network}</ProfileLinks>]}`}
           href={profile.url}
           target="_blank"
+          addMargin={profileIdx !== 0}
         >
           <ProfileContactIcon path={iconPaths[profile.network]} />
           {profile.url.split('/').slice(-1)[0]}
@@ -86,6 +87,7 @@ const Profile = ({ profile = {}, languages = [] }) => {
         {location.address}, {location.postalCode} {location.city} (
         {location.countryCode})
       </ProfileContactLink>
+      {renderLinks()}
     </ProfileContactContainer>
   );
 
@@ -111,10 +113,9 @@ const Profile = ({ profile = {}, languages = [] }) => {
 
   return (
     <ProfileContainer>
-      <Avatar src={picture} radius={10} />
+      <Avatar src={picture} />
       {renderMe()}
       {renderContact()}
-      {renderLinks()}
       {renderLanguages()}
     </ProfileContainer>
   );

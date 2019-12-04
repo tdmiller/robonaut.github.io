@@ -7,27 +7,23 @@ import colors from './colors';
 export const WorkExperienceContainer = styled.div(({ isFirst = false }) => ({
   display: 'flex',
   flexDirection: 'column',
-  marginTop: isFirst ? 0 : '2em',
+  marginTop: isFirst ? 0 : '2rem',
 }));
 
 export const WorkExperienceSummary = styled.div(props => ({
-  fontSize: '0.8em',
-  marginBottom: props.removeMarginBottom ? 0 : '1em',
+  fontSize: '0.8rem',
+  marginBottom: props.removeMarginBottom ? 0 : '1rem',
   fontStyle: 'italic',
 }));
 
 export const WorkExperienceContentContainer = styled.div(() => ({}));
 
-export const WorkExperienceHeader = styled(MainSectionHeader)(() => ({
-  backgroundColor: colors.whiteDarker,
-  padding: 8,
-  borderRadius: 4,
-}));
+export const WorkExperienceHeader = styled(MainSectionHeader)(() => ({}));
 
 export const WorkExperienceHighlightContainer = styled.div(props => ({
   display: 'flex',
   alignItems: 'center',
-  marginBottom: props.isLast ? 0 : '1em',
+  marginBottom: props.isLast ? 0 : '1rem',
 }));
 
 export const WorkExperienceHighlightIcon = styled(Icon)(() => ({
@@ -41,7 +37,7 @@ export const WorkExperienceHighlightIcon = styled(Icon)(() => ({
 export const WorkExperienceHighlightContentContainer = styled.div(() => ({
   display: 'flex',
   flexDirection: 'column',
-  marginLeft: '1em',
+  marginLeft: '1rem',
 }));
 
 export const WorkExperienceHighlightTitle = styled.div(() => ({
@@ -51,7 +47,7 @@ export const WorkExperienceHighlightTitle = styled.div(() => ({
 
 export const WorkExperienceHighlightLink = styled.a(() => ({
   color: colors.blue,
-  marginLeft: '1em',
+  marginLeft: '1rem',
   fontSize: '0.6em',
 }));
 
