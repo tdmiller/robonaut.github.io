@@ -43,8 +43,8 @@ class Resume extends PureComponent {
       <SectionsContainer>
         {this.renderSection('about', 'About')}
         {this.renderSection('skills', 'Skills')}
-        {this.renderSection('work', 'Work')}
         <div className="page-break" />
+        {this.renderSection('work', 'Work')}
         {this.renderSection('education', 'Education')}
         {this.renderSection('awards', 'Awards')}
         {this.renderSection('references', 'References')}
