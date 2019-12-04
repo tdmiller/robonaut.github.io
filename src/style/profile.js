@@ -3,11 +3,14 @@ import Icon from '@mdi/react';
 
 import colors from './colors';
 
-const HEADER_SPACING = '2em';
+export const HEADER_HEIGHT = '7rem';
+export const HEADER_PADDING = '1rem';
+
+const HEADER_SPACING = '2rem';
 
 const profileHeaderColumn = {
   marginLeft: HEADER_SPACING,
-  height: '4em',
+  height: '4rem',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
@@ -17,15 +20,14 @@ export const ProfileContainer = styled.div(() => ({
   display: 'flex',
   flexDirection: 'row',
   width: '100%',
-  height: 80,
+  height: `calc(${HEADER_HEIGHT} - 2 * ${HEADER_PADDING})`,
   position: 'fixed',
   '@media print': {
     position: 'relative',
-    height: 70,
   },
   backgroundColor: colors.navy,
   alignItems: 'center',
-  padding: 16,
+  padding: HEADER_PADDING,
   zIndex: 1,
 }));
 
@@ -36,13 +38,13 @@ export const ProfileContent = styled.div(() => ({
 export const Name = styled.div(() => ({
   color: colors.white,
   fontWeight: 'bold',
-  fontSize: '1.6em',
+  fontSize: '1.2rem',
   whiteSpace: 'nowrap',
 }));
 
 export const JobTitle = styled.div(() => ({
   color: colors.white,
-  fontSize: '1em',
+  fontSize: '1rem',
 }));
 
 export const ProfileContactContainer = styled.div(() => ({
@@ -56,7 +58,7 @@ export const ProfileContactLink = styled.a(() => ({
   alignItems: 'center',
   color: colors.silver,
   textDecoration: 'none',
-  fontSize: '0.8em',
+  fontSize: '0.8rem',
   '&:hover': {
     color: colors.blue,
   },
@@ -64,9 +66,8 @@ export const ProfileContactLink = styled.a(() => ({
 
 export const ProfileContactIcon = styled(Icon)(() => ({
   fill: colors.silver,
-  width: '2em',
+  width: '1rem',
   marginRight: 4,
-  marginTop: '0.2em',
 }));
 
 export const ProfileContactAddress = styled.div(() => ({
@@ -78,8 +79,8 @@ export const ProfileLinks = styled.div(() => ({
 }));
 
 export const ProfileIcon = styled(Icon)(() => ({
-  width: '1.6em',
-  marginTop: '0.5em',
+  width: '1.6rem',
+  marginTop: '0.5rem',
   fill: colors.white,
   '&:hover': {
     fill: colors.blue,
@@ -102,13 +103,13 @@ export const ProfileLanguage = styled.div(() => ({
   flexDirection: 'row',
   justifyContent: 'space-between',
   color: colors.silver,
-  fontSize: '0.8em',
+  fontSize: '0.8rem',
 }));
 
 export const ProfileStars = styled.div(() => ({
   ...profileHeaderColumn,
-  marginLeft: '1em',
-  minWidth: '5em',
+  marginLeft: '1rem',
+  minWidth: '5rem',
 }));
 
 export const ProfileHighlights = styled.div(() => ({

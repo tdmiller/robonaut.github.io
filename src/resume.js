@@ -44,8 +44,8 @@ class Resume extends PureComponent {
         {this.renderSection('about', 'About')}
         {this.renderSection('work', 'Work')}
         {this.renderSection('skills', 'Skills')}
-        {this.renderSection('education', 'Education')}
         <div className="page-break" />
+        {this.renderSection('education', 'Education')}
         {this.renderSection('awards', 'Awards')}
         {this.renderSection('references', 'References')}
         {this.renderSection('interests', 'Interests', true)}

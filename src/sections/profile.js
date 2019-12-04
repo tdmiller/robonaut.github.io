@@ -58,7 +58,8 @@ const Profile = ({ profile = {}, languages = [] }) => {
       {profiles.map(profile => (
         <ProfileContactLink
           key={`profile-${profile.network}</ProfileLinks>]}`}
-          href={`mailto:${email}`}
+          href={profile.url}
+          target="_blank"
         >
           <ProfileContactIcon path={iconPaths[profile.network]} />
           {profile.url.split('/').slice(-1)[0]}

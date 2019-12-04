@@ -2,8 +2,11 @@ import styled from '@emotion/styled';
 import Icon from '@mdi/react';
 
 import colors from './colors';
+import { HEADER_HEIGHT } from './profile';
 
 export { colors };
+
+export const MAIN_PADDING = '1rem';
 
 export const MainContainer = styled.div(() => ({
   display: 'flex',
@@ -13,33 +16,35 @@ export const MainContainer = styled.div(() => ({
 
 export const SectionsContainer = styled.div(() => ({
   backgroundColor: colors.white,
-  padding: '112px 16px 16px 16px', // heider height 80 + header padding 16 + own padding 16
-  '@media print': {
-    paddingTop: 16,
-  },
   zIndex: 0,
+  padding: `calc(${HEADER_HEIGHT} + 1rem) 2rem`,
+  '@media print': {
+    paddingTop: 0,
+  },
 }));
 
 export const MainSection = styled.div(() => ({
   display: 'flex',
   flexDirection: 'column',
   color: colors.black,
-  marginBottom: '1em',
+  marginBottom: '1rem',
 }));
 
-export const MainSectionTitle = styled.h2(() => ({
+export const MainSectionTitle = styled.div(() => ({
   display: 'flex',
+  margin: '0.5rem 0rem 0.5rem 1.5rem',
   flexDirection: 'row',
   alignItems: 'center',
+  fontSize: '1.2rem',
+  fontWeight: 'bold',
   borderBottom: `1px solid ${colors.silver}`,
   color: colors.navy,
-  marginLeft: 48,
 }));
 
 export const MainSectionTitleIcon = styled(Icon)(() => ({
-  marginRight: 16,
-  marginLeft: -48,
-  width: '1.2em',
+  marginLeft: '-1.5rem',
+  marginRight: '0.5rem',
+  width: '1rem',
   fill: colors.navy,
   opacity: 0.8,
 }));
@@ -48,7 +53,6 @@ export const MainSectionContent = styled.div(() => ({
   display: 'flex',
   flexDirection: 'column',
   color: colors.black,
-  marginLeft: 48,
 }));
 
 export const HighlightContainer = styled.div(() => ({
@@ -58,12 +62,12 @@ export const HighlightContainer = styled.div(() => ({
 
 export const HighlightIcon = styled(Icon)(() => ({
   fill: colors.white,
-  width: '2em',
+  width: '2rem',
 }));
 
 export const Star = styled(Icon)(props => ({
   fill: props.fill,
-  width: '1em',
+  width: '1rem',
 }));
 
 export const Link = styled.a(props => ({
@@ -80,7 +84,7 @@ export const Link = styled.a(props => ({
 export const MainSectionHeaderContainer = styled.div(props => ({
   display: 'flex',
   flexDirection: 'row',
-  marginBottom: props.removeMarginBottom ? 0 : '1em',
+  marginBottom: props.removeMarginBottom ? 0 : '1rem',
   pageBreakInside: 'avoid',
 }));
 
@@ -94,7 +98,7 @@ export const MainSectionHeaderTitleLeft = styled.div(() => ({
 export const MainSectionHeaderSubtitleLeft = styled.div(props => {
   return {
     color: colors.grey,
-    fontSize: '0.8em',
+    fontSize: '0.8rem',
     marginTop: 4,
     textDecoration: 'none',
     display: 'flex',
@@ -105,7 +109,7 @@ export const MainSectionHeaderSubtitleLeft = styled.div(props => {
 });
 
 export const MainSectionHeaderTitleRightContainer = styled.div(() => ({
-  marginLeft: '2em',
+  marginLeft: '2rem',
 }));
 
 export const MainSectionHeaderTitleRight = styled.div(() => ({
@@ -124,8 +128,8 @@ export const MainSectionHeaderSubtitleRight = MainSectionHeaderSubtitleLeft;
 
 export const MainSectionHeaderLinkIcon = styled(Icon)(() => ({
   fill: colors.grey,
-  width: '1em',
-  marginLeft: '1em',
+  width: '1rem',
+  marginLeft: '1rem',
 }));
 
 export const KeywordsContainer = styled.div(() => ({
@@ -138,7 +142,6 @@ export const KeywordsContainer = styled.div(() => ({
 export const KeywordContainer = styled.div(({ isLast = false }) => ({
   backgroundColor: colors.whiteDarker,
   marginBottom: 8,
-  // border: `1px solid ${colors.blue}`,
   color: colors.blue,
   padding: `0px 4px 0px 4px`,
   fontWeight: 'bold',
