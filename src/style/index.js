@@ -147,5 +147,9 @@ export const KeywordContainer = styled.div(({ isLast = false }) => ({
 export const Keyword = styled.div``;
 
 export const PageBreakBefore = styled.div(() => ({
-  pageBreakBefore: 'always',
+  breakBefore: 'page',
+}));
+
+export const PageBreakAfter = styled.div(() => ({
+  breakAfter: 'page',
 }));

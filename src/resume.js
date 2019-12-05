@@ -9,6 +9,7 @@ import {
   MainSection,
   MainSectionContent,
   SectionsContainer,
+  PageBreakAfter,
 } from './style';
 
 class Resume extends PureComponent {
@@ -43,7 +44,9 @@ class Resume extends PureComponent {
       <SectionsContainer>
         {this.renderSection('about', 'About')}
         {this.renderSection('skills', 'Skills')}
+        <PageBreakAfter />
         {this.renderSection('work', 'Work')}
+        <PageBreakAfter />
         {this.renderSection('education', 'Education')}
         {this.renderSection('awards', 'Awards')}
         {this.renderSection('references', 'References')}
