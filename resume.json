@@ -38,18 +38,19 @@
       "highlights": [
         {
           "title": "Aaqua",
-          "summary": "I led a team of 5 full stack engineers to create a new fandom centric social network. I was responsible for delivering a brand new mobile app (TypeScript, Redux, Apollo) and a public graphQL API (TypeScript, Koa, Apollo) backed by a Neo4j graph database. In both frontend and backend projects we attained 100% code coverage and a continuous CICD pipeline delivering multiple automated deploys every day. This way our team was consistently able to support an ever growing feature set (social login, following, friending, commenting, picture upload, notifications, ...)"
+          "summary": "I led a team of full stack engineers to create a new fandom centric social network. I was responsible for delivering a brand new mobile app (TypeScript, Redux, Apollo) and a public graphQL API (TypeScript, Koa, Apollo) backed by a Neo4j graph database. In both frontend and backend projects we attained 100% code coverage and a continuous CICD pipeline delivering multiple automated deploys every day. This way our team was consistently able to support an ever growing feature set (social login, friending, commenting, picture upload, notifications, ...)"
         },
         {
           "title": "Driver Coaching",
-          "summary": "To create a new contextual (driver) coaching platform, I wrote the graphQL API and created the database design (PostgreSQL). Together with our team I integrated this API with other internal services by using Apache Kafka as a messaging layer. We also created a brand new mobile app with in app coaching messages and we added push notifications and several gamification features to showcase the Sentiance Drive Coaching capabilities."
+          "summary": "To create a contextual coaching platform, I wrote the graphQL API and created the database design (PostgreSQL). Together with our team I integrated this API with other internal services by using Apache Kafka as the messaging layer."
         },
         {
           "title": "Journeys",
           "link": "https://www.sentiance.com/demo",
           "summary": "My first task at Sentiance was a complete rewrite of the Sentiance demo app (Journeys) which embeds their proprietary tracking SDK. Therefore we bridged the native SDK's for android and iOS to React Native. We created a brand new app (React Native, Redux) and added animated interactive map views (Mapbox) together with custom animations and data visualisations, powered by a GraphQL API interface. I also created a CI/CD pipeline that automated distributing multiple flavors of their app (and sdk) enforcing 98% test coverage."
         }
-      ]
+      ],
+      "breakAfter": true
     },
     {
       "company": "Small Town Heroes",
@@ -63,7 +64,7 @@
           "summary": "I was responsible for the design and implementation of scalable backend services, high traffic websites, API's and CMS interfaces for a variety of (live) TV shows. I took care of the full release cycle of the services - from concept to production releases - with an eye for quality, detail and user experience. My area of expertise essentially covered their complete technology stack ranging from architectural design to server deploys and UI tweaks. While continuously and actively learning I gained expert knowledge of and hands-on experience with Amazon Web Services, Node.js and its ecosystem, serverless architectures, RESTful dockerized web services, SQL and NoSQL data stores and a plethora of frontend development frameworks like backbone.js, react and react-native."
         },
         {
-          "summary": "I was a major contributor on most API's and mobile applications for television shows: Ketnet, Studio 100, Blokken, Eurosong, De Ridder, De Rijdende Rechter, Ook Getest Op Mensen, Het Spiegelpaleis, The Passion, ..."
+          "summary": "I was a major contributor on most API's and mobile applications for major brands and television shows like 'Ketnet', 'Studio 100', 'Blokken', 'Eurosong', 'Ook Getest Op Mensen', 'The Passion', ..."
         }
       ]
     },
@@ -149,22 +150,25 @@
     {
       "name": "Software Development",
       "keywords": [
-        "Microservices",
-        "TDD",
-        "CI/CD",
-        "Web Development",
-        "Mobile Application Development",
-        "Scalable Software",
         "API Design",
+        "Web Development",
+        "Mobile Application Architecture",
+        "Microservices Architecture",
+        "Scalable Software Design",
+        "Test Driven Development",
+        "CI/CD",
+        "Cloud Native",
+        "AWS",
+        "Distributed Systems",
         "Database Design",
         "Serverless",
-        "NoSQL",
-        "Scrum"
+        "NoSQL"
       ]
     },
     {
       "name": "Technologie & Frameworks",
       "keywords": [
+        "ES.Next",
         "Node.js",
         "Koa.js",
         "Express",
@@ -183,11 +187,11 @@
     },
     {
       "name": "Data Stores",
-      "keywords": ["PostgreSQL", "MySQL", "Redis", "DynamoDB", "Elasticsearch", "Neo4j"]
+      "keywords": ["PostgreSQL", "MySQL", "Redis", "DynamoDB", "Elasticsearch", "Neo4j", "S3"]
     },
     {
       "name": "Continuous Integration & Deployment",
-      "keywords": ["AWS", "Jenkins", "CircleCI", "Docker", "Nomad", "Git"]
+      "keywords": ["Jenkins", "CircleCI", "Docker", "Nomad", "SonarQube", "Ansible", "Git", "Jest", "Mocha"]
     },
     {
       "name": "Programming Languages",
@@ -228,12 +232,14 @@
   ],
   "references": [
     {
-      "name": "Patrick Debois (CTO)",
+      "name": "Patrick Debois",
+      "relation": "managed Ilja directly as CTO of zender.tv",
       "url": "https://www.linkedin.com/in/patrickdebois/",
       "reference": "Ilja is the canonical example of \"Mens sana in corpore sano\". He gracefully lived through the rough times of an early startup: designing scalable architecture, developing it and ... also running it. Over the years I've seen him evolve to a professional cloud native with a great hunger for new things but with enough pragmatism to deliver your product without the worries. Allrounder skilled in AWS, Mobile, Modern Web and data algorithms, I can only recommend him and envy you when you hire him."
     },
     {
       "name": "Wouter Smet",
+      "relation": "studied physics together at UGent",
       "url": "https://www.linkedin.com/in/woutersmet/",
       "reference": "I've had the pleasure of studying for my M. Sc. in physics together with Ilja, including many group assignments, and having his sharp mind and inspiring creativity around consistently made it more pleasant to Get Things Done"
     }

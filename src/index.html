@@ -27,15 +27,14 @@
         margin: 0px;
       }
       @media print {
+        @page {
+          size: A4; /* DIN A4 standard, Europe */
+        }
         html {
-          font-size: 12px;
+          font-size: 11px;
         }
         body {
           -webkit-print-color-adjust: exact;
-        }
-        .page-break {
-          display: block;
-          page-break-after: always;
         }
       }
     </style>

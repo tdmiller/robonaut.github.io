@@ -85,7 +85,6 @@ export const MainSectionHeaderContainer = styled.div(props => ({
   borderRadius: 4,
   flexDirection: 'row',
   marginBottom: props.removeMarginBottom ? 0 : '1rem',
-  pageBreakInside: 'avoid',
 }));
 
 export const MainSectionHeaderTitleLeftContainer = styled.div(() => ({}));
@@ -95,18 +94,16 @@ export const MainSectionHeaderTitleLeft = styled.div(() => ({
   color: colors.navy,
 }));
 
-export const MainSectionHeaderSubtitleLeft = styled.div(props => {
-  return {
-    color: colors.grey,
-    fontSize: '0.8rem',
-    marginTop: 4,
-    textDecoration: 'none',
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    '&:hover': props.href ? { color: colors.blue } : {},
-  };
-});
+export const MainSectionHeaderSubtitleLeft = styled.div(props => ({
+  color: colors.grey,
+  fontSize: '0.8rem',
+  marginTop: 4,
+  textDecoration: 'none',
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  '&:hover': props.href ? { color: colors.blue } : {},
+}));
 
 export const MainSectionHeaderTitleRightContainer = styled.div(() => ({
   marginLeft: '2rem',
@@ -148,3 +145,7 @@ export const KeywordContainer = styled.div(({ isLast = false }) => ({
 }));
 
 export const Keyword = styled.div``;
+
+export const PageBreakBefore = styled.div(() => ({
+  pageBreakBefore: 'always',
+}));

@@ -2,9 +2,11 @@ import { mdiFormatQuoteClose, mdiFormatQuoteOpen } from '@mdi/js';
 import React from 'react';
 
 import {
+  ReferenceContact,
   ReferenceContainer,
   ReferenceName,
   ReferenceQuoteIcon,
+  ReferenceRelation,
   ReferenceText,
 } from '../style/reference';
 
@@ -14,7 +16,12 @@ const Reference = (reference, idx, isLast) => (
       <ReferenceQuoteIcon path={mdiFormatQuoteOpen} />
       {reference.reference}
       <ReferenceQuoteIcon path={mdiFormatQuoteClose} />
-      <ReferenceName>{reference.name}</ReferenceName>
+      <ReferenceContact>
+        <ReferenceName href={reference.url} target="_blank" as="a">
+          {reference.name}
+        </ReferenceName>
+        <ReferenceRelation>{reference.relation}</ReferenceRelation>
+      </ReferenceContact>
     </ReferenceText>
   </ReferenceContainer>
 );
