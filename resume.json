@@ -49,8 +49,7 @@
           "link": "https://www.sentiance.com/demo",
           "summary": "My first task at Sentiance was a complete rewrite of the Sentiance demo app (Journeys) which embeds their proprietary tracking SDK. Therefore we bridged the native SDK's for android and iOS to React Native. We created a brand new app (React Native, Redux) and added animated interactive map views (Mapbox) together with custom animations and data visualisations, powered by a GraphQL API interface. I also created a CI/CD pipeline that automated distributing multiple flavors of their app (and sdk) enforcing 98% test coverage."
         }
-      ],
-      "breakAfter": true
+      ]
     },
     {
       "company": "Small Town Heroes",

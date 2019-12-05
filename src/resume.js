@@ -8,8 +8,8 @@ import {
   MainContainer,
   MainSection,
   MainSectionContent,
-  SectionsContainer,
   PageBreakAfter,
+  SectionsContainer,
 } from './style';
 
 class Resume extends PureComponent {
