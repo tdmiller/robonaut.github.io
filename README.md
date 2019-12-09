@@ -1,6 +1,6 @@
 # cv.robonaut.be
 
-This is a custom react based frontend with static server-side render hosted on github pages. The resume data is based on the JSON resume schema (https://jsonresume.org/).
+This is a custom react based UI hosted on github pages. The resume data is based upon the JSON resume schema (https://jsonresume.org/). This [site](https://cv.robonaut.be) is optimized for [speed](https://developers.google.com/speed/pagespeed/insights/?hl=nl&url=https%3A%2F%2Fcv.robonaut.be&tab=desktop).
 
 ## Install dependencies
 
