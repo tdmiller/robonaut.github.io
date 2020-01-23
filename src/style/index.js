@@ -138,6 +138,9 @@ export const KeywordContainer = styled.div(({ isLast = false }) => ({
   color: colors.blue,
   fontWeight: 'bold',
   marginRight: isLast ? 0 : '1rem',
+  flexDirection: 'column',
+  display: 'flex',
+  // alignItems: 'center',
 }));
 
 export const Keyword = styled.div``;

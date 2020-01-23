@@ -14,6 +14,7 @@ module.exports = {
     module: 'readonly',
     process: 'readonly',
   },
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,

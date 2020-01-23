@@ -17,9 +17,9 @@ import {
 
 const WorkExperienceHighlight = ({ highlight, isLast }) => (
   <WorkExperienceHighlightContainer isLast={isLast}>
-    <WorkExperienceHighlightIcon path={mdiMarker} />
     <WorkExperienceHighlightContentContainer>
       <WorkExperienceHighlightTitle>
+        <WorkExperienceHighlightIcon path={mdiMarker} />
         {highlight.title}
         {highlight.link && (
           <WorkExperienceHighlightLink href={highlight.link} target="_blank">

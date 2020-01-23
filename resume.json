@@ -42,7 +42,7 @@
         },
         {
           "title": "Driver Coaching",
-          "summary": "To create a contextual coaching platform, I wrote the graphQL API and created the database design (PostgreSQL). Together with our team I integrated this API with other internal services by using Apache Kafka as the messaging layer."
+          "summary": "To create a contextual coaching platform, I wrote the graphQL API and created the database design (PostgreSQL). Together with our team I integrated this API with other internal services using Apache Kafka."
         },
         {
           "title": "Journeys",
@@ -60,7 +60,7 @@
       "summary": "Small Town Heroes is a Ghent based startup that provides software tools and services for broadcaster and publishers with a focus on mobile video experiences and user interactions.",
       "highlights": [
         {
-          "summary": "I was responsible for the design and implementation of scalable backend services, high traffic websites, API's and CMS interfaces for a variety of (live) TV shows. I took care of the full release cycle of the services - from concept to production releases - with an eye for quality, detail and user experience. My area of expertise essentially covered their complete technology stack ranging from architectural design to server deploys and UI tweaks. While continuously and actively learning I gained expert knowledge of and hands-on experience with Amazon Web Services, Node.js and its ecosystem, serverless architectures, RESTful dockerized web services, SQL and NoSQL data stores and a plethora of frontend development frameworks like backbone.js, react and react-native."
+          "summary": "I was responsible for the design and implementation of scalable backend services, high traffic websites, API's and CMS interfaces for a variety of (live) TV shows. I took care of the full release cycle of the services - from concept to production releases - with an eye for quality, detail and user experience. My area of expertise essentially covered their complete technology stack ranging from architectural design to server deploys and UI tweaks. While continuously and actively learning I gained expert knowledge of and hands-on experience with Amazon Web Services, Node.js and its ecosystem, serverless architectures, RESTful dockerized web services, SQL and NoSQL data stores and a plethora of frontend development frameworks like backbone.js, react.js and react-native."
         },
         {
           "summary": "I was a major contributor on most API's and mobile applications for major brands and television shows like 'Ketnet', 'Studio 100', 'Blokken', 'Eurosong', 'Ook Getest Op Mensen', 'The Passion', ..."
@@ -147,72 +147,102 @@
   ],
   "skills": [
     {
+      "name": "Languages",
+      "keywords": [
+        { "name": "Dutch", "stars": 5 },
+        { "name": "English", "stars": 4 },
+        { "name": "French", "stars": 3 }
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "keywords": [
+        { "name": "Javascript", "stars": 5 },
+        { "name": "HTML/CSS", "stars": 5},
+        { "name": "TypeScript", "stars": 4 },
+        { "name": "Python", "stars": 3 },
+        { "name": "Ruby", "stars": 3 },
+        { "name": "SQL", "stars": 3},
+        { "name": "Java", "stars": 2 },
+        { "name": "C#", "stars": 2 },
+        { "name": "PHP", "stars": 2},
+        { "name": "ObjectiveC", "stars": 1},
+        { "name": "GoLang", "stars": 1}
+      ]
+    },
+    {
       "name": "Software Development",
       "keywords": [
-        "API Design",
-        "Web Development",
-        "Mobile Application Architecture",
-        "Microservices Architecture",
-        "Scalable Software Design",
-        "Test Driven Development",
-        "CI/CD",
-        "Cloud Native",
-        "AWS",
-        "Distributed Systems",
-        "Database Design",
-        "Serverless",
-        "NoSQL"
+        { "name": "API Design", "stars": 5 },
+        { "name": "Web Development", "stars": 5 },
+        { "name": "CI/CD", "stars": 4 },
+        { "name": "TDD", "stars": 4 },
+        { "name": "AWS", "stars": 4 },
+        { "name": "NoSQL", "stars": 4 },
+        { "name": "Mobile Application Architecture", "stars": 4 },
+        { "name": "Microservices", "stars": 4 },
+        { "name": "UI/UX", "stars": 3 },
+        { "name": "Database Design", "stars": 3 },
+        { "name": "Serverless", "stars":  3}
       ]
     },
     {
       "name": "Technologie & Frameworks",
       "keywords": [
-        "ES.Next",
-        "Node.js",
-        "Koa.js",
-        "Express",
-        "TypeScript",
-        "React",
-        "React Native",
-        "Redux",
-        "D3",
-        "GraphQL",
-        "Websockets",
-        "FFMPEG",
-        "ImageMagick",
-        "Apache Kafka",
-        "Thrift"
+        { "name": "Node.js", "stars": 5 },
+        { "name": "Koa.js", "stars": 5 },
+        { "name": "Express.js", "stars": 5 },
+        { "name": "React.js", "stars": 5 },
+        { "name": "React Native", "stars": 5 },
+        { "name": "GraphQL", "stars": 4 },
+        { "name": "Socket.io", "stars": 4 },
+        { "name": "ImageMagick", "stars": 4 },
+        { "name": "D3", "stars": 3 },
+        { "name": "Kafka", "stars": 3 },
+        { "name": "Thrift", "stars": 3 },
+        { "name": "FFMPEG", "stars": 2 }
       ]
     },
     {
       "name": "Data Stores",
-      "keywords": ["PostgreSQL", "MySQL", "Redis", "DynamoDB", "Elasticsearch", "Neo4j", "S3"]
+      "keywords": [
+        { "name": "Redis", "stars": 5 },
+        { "name": "S3", "stars": 5 },
+        { "name": "DynamoDB", "stars": 4 },
+        { "name": "PostgreSQL", "stars": 4 },
+        { "name": "MySQL", "stars": 4 },
+        { "name": "Elasticsearch", "stars": 4 },
+        { "name": "Neo4J", "stars": 3 }
+      ]
     },
     {
       "name": "Continuous Integration & Deployment",
-      "keywords": ["Jenkins", "CircleCI", "Docker", "Nomad", "SonarQube", "Ansible", "Git", "Jest", "Mocha"]
-    },
-    {
-      "name": "Programming Languages",
-      "keywords": ["Javascript", "Python", "Java", "Ruby", "HTML/CSS", "PHP"]
+      "keywords": [
+        { "name": "Git", "stars": 5 },
+        { "name": "CircleCI", "stars": 5 },
+        { "name": "Mocha", "stars": 5 },
+        { "name": "Jest", "stars": 5 },
+        { "name": "Docker", "stars": 5 },
+        { "name": "Jenkins", "stars": 4 },
+        { "name": "SonarQube", "stars": 4 },
+        { "name": "DataDog", "stars": 4 },
+        { "name": "Nomad", "stars": 3 },
+        { "name": "Ansible", "stars": 3 }
+      ]
     },
     {
       "name": "Mobile Applications",
-      "keywords": ["Android Studio", "XCode", "Fastlane", "React Native Bridging", "Build Schemes & Flavors", "Push Notifications", "Analytics", "Mobile SDK's"]
-    }
-  ],
-  "languages": [
-    {
-      "language": "Dutch",
-      "fluency": "Native"
-    },
-    {
-      "language": "English",
-      "fluency": "Good"
-    },
-    {
-      "language": "French",
-      "fluency": "Moderate"
+      "keywords": [
+        { "name": "Fastlane", "stars": 5},
+        { "name": "Push Notifications", "stars": 5 },
+        { "name": "Analytics", "stars": 5 },
+        { "name": "Build Schemes & Flavors", "stars": 4 },
+        { "name": "React Native Bridging", "stars": 3 },
+        { "name": "XCode", "stars": 3 },
+        { "name": "Android Studio", "stars": 3 },
+        { "name": "Gradle", "stars": 3 },
+        { "name": "Mobile SDK's", "stars": 3 }
+      ]
     }
   ],
   "interests": [

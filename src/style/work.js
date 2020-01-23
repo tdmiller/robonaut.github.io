@@ -31,17 +31,21 @@ export const WorkExperienceHighlightIcon = styled(Icon)(() => ({
   flexShrink: 0,
   alignSelf: 'auto',
   opacity: 0.6,
+  marginRight: '0.4rem',
 }));
 
 export const WorkExperienceHighlightContentContainer = styled.div(() => ({
   display: 'flex',
   flexDirection: 'column',
-  marginLeft: '1rem',
+  // marginLeft: '1rem',
 }));
 
 export const WorkExperienceHighlightTitle = styled.div(() => ({
   fontWeight: 'bold',
   marginBottom: 2,
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
 }));
 
 export const WorkExperienceHighlightLink = styled.a(() => ({

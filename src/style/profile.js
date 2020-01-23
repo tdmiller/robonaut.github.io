@@ -52,7 +52,7 @@ export const JobTitle = styled.div(() => ({
 
 export const ProfileContactContainer = styled.div(() => ({
   ...profileHeaderColumn,
-  fontSize: '0.6rem',
+  fontSize: '0.8rem',
 }));
 
 export const ProfileContactLink = styled.a(() => ({
@@ -88,26 +88,6 @@ export const Avatar = styled.img(() => ({
   height: '5rem',
   flexGrow: 'none',
 }));
-
-// export const ProfileLanguages = styled.div(() => ({
-//   ...profileHeaderColumn,
-//   fontSize: '0.6rem',
-//   marginBottom: 0,
-// }));
-
-// export const ProfileLanguage = styled.div(() => ({
-//   display: 'flex',
-//   flexDirection: 'row',
-//   justifyContent: 'space-between',
-//   color: colors.silver,
-// }));
-
-// export const ProfileStars = styled.div(() => ({
-//   ...profileHeaderColumn,
-//   marginLeft: '1rem',
-//   minWidth: '5rem',
-//   fontSize: '0.6rem',
-// }));
 
 export const ProfileHighlights = styled.div(() => ({
   display: 'flex',
