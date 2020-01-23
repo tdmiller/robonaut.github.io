@@ -11,7 +11,6 @@ export const WorkExperienceContainer = styled.div(({ isFirst = false }) => ({
 }));
 
 export const WorkExperienceSummary = styled.div(props => ({
-  fontSize: '0.8rem',
   marginBottom: props.removeMarginBottom ? 0 : '1rem',
   fontStyle: 'italic',
 }));
@@ -48,7 +47,6 @@ export const WorkExperienceHighlightTitle = styled.div(() => ({
 export const WorkExperienceHighlightLink = styled.a(() => ({
   color: colors.blue,
   marginLeft: '1rem',
-  fontSize: '0.6em',
 }));
 
 export const WorkExperienceHighlightText = styled.div(() => ({}));

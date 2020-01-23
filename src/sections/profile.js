@@ -10,7 +10,7 @@ import {
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { Stars } from '../components';
+// import { Stars } from '../components';
 import {
   Avatar,
   JobTitle,
@@ -19,30 +19,20 @@ import {
   ProfileContactIcon,
   ProfileContactLink,
   ProfileContent,
-  ProfileLanguage,
-  ProfileLanguages,
-  ProfileLinks,
-  ProfileStars,
+  ProfileMe,
 } from '../style/profile';
 import { ProfileContainer } from '../style/profile';
 
-const languageStars = {
-  Native: 5,
-  Good: 4,
-  Moderate: 3,
-  Basic: 2,
-  Beginner: 1,
-};
+// const languageStars = {
+//   Native: 5,
+//   Good: 4,
+//   Moderate: 3,
+//   Basic: 2,
+//   Beginner: 1,
+// };
 
-const Profile = ({ profile = {}, languages = [] }) => {
-  const {
-    picture = '',
-    name = '',
-    label = '',
-    location = {},
-    profiles = [],
-    email,
-  } = profile;
+const Profile = ({ profile = {} }) => {
+  const { picture = '', name = '', label = '', profiles = [], email } = profile;
   const iconPaths = {
     github: mdiGithubCircle,
     linkedin: mdiLinkedinBox,
@@ -53,27 +43,11 @@ const Profile = ({ profile = {}, languages = [] }) => {
     phone: mdiPhone,
   };
 
-  const renderLinks = () => (
-    <ProfileLinks>
-      {profiles.map((profile, profileIdx) => (
-        <ProfileContactLink
-          key={`profile-${profile.network}</ProfileLinks>]}`}
-          href={profile.url}
-          target="_blank"
-          addMargin={profileIdx !== 0}
-        >
-          <ProfileContactIcon path={iconPaths[profile.network]} />
-          {profile.url.split('/').slice(-1)[0]}
-        </ProfileContactLink>
-      ))}
-    </ProfileLinks>
-  );
-
   const renderMe = () => (
-    <ProfileContent>
+    <ProfileMe>
       <Name>{name}</Name>
       <JobTitle>{label}</JobTitle>
-    </ProfileContent>
+    </ProfileMe>
   );
 
   const renderContact = () => (
@@ -82,41 +56,57 @@ const Profile = ({ profile = {}, languages = [] }) => {
         <ProfileContactIcon path={iconPaths.email} />
         {email}
       </ProfileContactLink>
-      <ProfileContactLink href={location.link} target="_blank">
+      {profiles.map(profile => (
+        <ProfileContactLink
+          key={`profile-${profile.network}</ProfileLinks>]}`}
+          href={profile.url}
+          target="_blank"
+        >
+          <ProfileContactIcon path={iconPaths[profile.network]} />
+          {profile.url.split('/').slice(-1)[0]}
+        </ProfileContactLink>
+      ))}
+      {/* <ProfileContactLink href={location.link} target="_blank">
         <ProfileContactIcon path={iconPaths.address} />
-        {location.address}, {location.postalCode} {location.city} (
-        {location.countryCode})
-      </ProfileContactLink>
-      {renderLinks()}
+        {location.address}, <br />
+        {location.postalCode} {location.city} ({location.countryCode})
+      </ProfileContactLink> */}
     </ProfileContactContainer>
   );
 
-  const renderLanguages = () => (
-    <>
-      <ProfileLanguages>
-        {languages.map(l => (
-          <ProfileLanguage key={`language-${l.language}`}>
-            {l.language}
-          </ProfileLanguage>
-        ))}
-      </ProfileLanguages>
-      <ProfileStars>
-        {languages.map(l => (
-          <Stars
-            key={`language-${l.language}-stars`}
-            rating={languageStars[l.fluency]}
-          />
-        ))}
-      </ProfileStars>
-    </>
-  );
+  // const renderLanguages = () => (
+  //   <>
+  //     <ProfileLanguages>
+  //       {languages.map(l => (
+  //         <>
+  //           <ProfileLanguage key={`language-${l.language}`}>
+  //             {l.language}
+  //           </ProfileLanguage>
+  //           <Stars
+  //             key={`language-${l.language}-stars`}
+  //             rating={languageStars[l.fluency]}
+  //           />
+  //         </>
+  //       ))}
+  //     </ProfileLanguages>
+  //     <ProfileStars>
+  //       {languages.map(l => (
+  //         <Stars
+  //           key={`language-${l.language}-stars`}
+  //           rating={languageStars[l.fluency]}
+  //         />
+  //       ))}
+  //     </ProfileStars>
+  //   </>
+  // );
 
   return (
     <ProfileContainer>
       <Avatar src={picture} />
-      {renderMe()}
-      {renderContact()}
-      {renderLanguages()}
+      <ProfileContent>
+        {renderMe()}
+        {renderContact()}
+      </ProfileContent>
     </ProfileContainer>
   );
 };

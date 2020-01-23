@@ -31,13 +31,9 @@ const MainSectionHeader = ({
   rightUrl,
   leftStyle = {},
   rightStyle = {},
-  className,
   removeMarginBottom,
 }) => (
-  <MainSectionHeaderContainer
-    className={className}
-    removeMarginBottom={removeMarginBottom}
-  >
+  <MainSectionHeaderContainer removeMarginBottom={removeMarginBottom}>
     <MainSectionHeaderTitleLeftContainer style={leftStyle}>
       <MainSectionHeaderTitleLeft>{titleLeft}</MainSectionHeaderTitleLeft>
       <MainSectionHeaderSubtitleLeft>

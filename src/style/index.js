@@ -2,21 +2,19 @@ import styled from '@emotion/styled';
 import Icon from '@mdi/react';
 
 import colors from './colors';
-import { HEADER_HEIGHT } from './profile';
+import { HEADER_HEIGHT } from './sizes';
 
 export { colors };
 
-export const MAIN_PADDING = '1rem';
-
 export const MainContainer = styled.div(() => ({
-  display: 'flex',
-  flexDirection: 'column',
+  // display: 'flex',
+  // flexDirection: 'column',
 }));
 
 export const SectionsContainer = styled.div(() => ({
   backgroundColor: colors.white,
   zIndex: 0,
-  padding: `calc(${HEADER_HEIGHT} + 1rem) 2rem`,
+  padding: `calc(${HEADER_HEIGHT} + 2rem) 2rem`,
   '@media print': {
     paddingTop: '1rem',
   },
@@ -34,7 +32,6 @@ export const MainSectionTitle = styled.div(() => ({
   margin: '1rem 0',
   flexDirection: 'row',
   alignItems: 'center',
-  fontSize: '1.5rem',
   fontWeight: 'bold',
   color: colors.navy,
 }));
@@ -96,7 +93,6 @@ export const MainSectionHeaderTitleLeft = styled.div(() => ({
 
 export const MainSectionHeaderSubtitleLeft = styled.div(props => ({
   color: colors.grey,
-  fontSize: '0.8rem',
   marginTop: 4,
   textDecoration: 'none',
   display: 'flex',

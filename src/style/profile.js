@@ -2,25 +2,19 @@ import styled from '@emotion/styled';
 import Icon from '@mdi/react';
 
 import colors from './colors';
-
-export const HEADER_HEIGHT = '8rem';
-export const HEADER_PADDING = '1rem';
-
-const HEADER_SPACING = '2rem';
+import { HEADER_HEIGHT, HEADER_PADDING } from './sizes';
 
 const profileHeaderColumn = {
-  marginLeft: HEADER_SPACING,
-  height: '4rem',
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'space-between',
+  justifyContent: 'space-around',
 };
 
 export const ProfileContainer = styled.div(() => ({
   display: 'flex',
   flexDirection: 'row',
-  width: '100%',
-  height: `calc(${HEADER_HEIGHT} - 2 * ${HEADER_PADDING})`,
+  height: HEADER_HEIGHT,
+  width: '100vw',
   position: 'fixed',
   '@media print': {
     position: 'relative',
@@ -32,34 +26,41 @@ export const ProfileContainer = styled.div(() => ({
 }));
 
 export const ProfileContent = styled.div(() => ({
+  display: 'flex',
+  flexDirection: 'row',
+}));
+
+export const ProfileMe = styled.div(() => ({
   ...profileHeaderColumn,
+  marginLeft: '1rem',
+  marginRight: '2rem',
 }));
 
 export const Name = styled.div(() => ({
   color: colors.white,
   fontWeight: 'bold',
-  fontSize: '1.5rem',
+  fontSize: '1.8rem',
+  lineHeight: '2rem',
   whiteSpace: 'nowrap',
 }));
 
 export const JobTitle = styled.div(() => ({
   color: colors.white,
-  fontSize: '1rem',
+  marginTop: '0.6rem',
+  fontSize: '1.2rem',
 }));
 
 export const ProfileContactContainer = styled.div(() => ({
   ...profileHeaderColumn,
+  fontSize: '0.6rem',
 }));
 
-export const ProfileContactLink = styled.a(props => ({
-  margin: '2px 0',
-  marginLeft: props.addMargin ? '2em' : 0,
+export const ProfileContactLink = styled.a(() => ({
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
   color: colors.silver,
   textDecoration: 'none',
-  fontSize: '0.8rem',
   '&:hover': {
     color: colors.blue,
   },
@@ -71,18 +72,10 @@ export const ProfileContactIcon = styled(Icon)(() => ({
   marginRight: 4,
 }));
 
-export const ProfileContactAddress = styled.div(() => ({
-  margin: '2px 0',
-}));
-
-export const ProfileLinks = styled.div(() => ({
-  display: 'flex',
-  flexDirection: 'row',
-}));
+export const ProfileContactAddress = styled.div(() => ({}));
 
 export const ProfileIcon = styled(Icon)(() => ({
   width: '1.6rem',
-  marginTop: '0.5rem',
   fill: colors.white,
   '&:hover': {
     fill: colors.blue,
@@ -90,29 +83,31 @@ export const ProfileIcon = styled(Icon)(() => ({
 }));
 
 export const Avatar = styled.img(() => ({
-  borderRadius: '2.5em',
-  width: '5em',
-  height: '5em',
+  borderRadius: '2.5rem',
+  width: '5rem',
+  height: '5rem',
   flexGrow: 'none',
 }));
 
-export const ProfileLanguages = styled.div(() => ({
-  ...profileHeaderColumn,
-}));
+// export const ProfileLanguages = styled.div(() => ({
+//   ...profileHeaderColumn,
+//   fontSize: '0.6rem',
+//   marginBottom: 0,
+// }));
 
-export const ProfileLanguage = styled.div(() => ({
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'space-between',
-  color: colors.silver,
-  fontSize: '0.8rem',
-}));
+// export const ProfileLanguage = styled.div(() => ({
+//   display: 'flex',
+//   flexDirection: 'row',
+//   justifyContent: 'space-between',
+//   color: colors.silver,
+// }));
 
-export const ProfileStars = styled.div(() => ({
-  ...profileHeaderColumn,
-  marginLeft: '1rem',
-  minWidth: '5rem',
-}));
+// export const ProfileStars = styled.div(() => ({
+//   ...profileHeaderColumn,
+//   marginLeft: '1rem',
+//   minWidth: '5rem',
+//   fontSize: '0.6rem',
+// }));
 
 export const ProfileHighlights = styled.div(() => ({
   display: 'flex',

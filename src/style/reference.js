@@ -31,5 +31,4 @@ export const ReferenceQuoteIcon = styled(Icon)(() => ({
 export const ReferenceRelation = styled.span(() => ({
   color: colors.grey,
   marginLeft: '1rem',
-  fontSize: '0.8rem',
 }));

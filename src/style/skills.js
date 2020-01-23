@@ -11,5 +11,5 @@ export const SkillSectionTitle = styled.div(() => ({
   padding: 8,
   borderRadius: 4,
   fontWeight: 'bold',
-  marginBottom: '1em',
+  marginBottom: '1rem',
 }));
