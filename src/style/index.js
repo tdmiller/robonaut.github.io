@@ -84,7 +84,9 @@ export const MainSectionHeaderContainer = styled.div(props => ({
   marginBottom: props.removeMarginBottom ? 0 : '1rem',
 }));
 
-export const MainSectionHeaderTitleLeftContainer = styled.div(() => ({}));
+export const MainSectionHeaderTitleLeftContainer = styled.div(() => ({
+  width: '20rem',
+}));
 
 export const MainSectionHeaderTitleLeft = styled.div(() => ({
   fontWeight: 'bold',
