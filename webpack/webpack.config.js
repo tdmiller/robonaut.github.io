@@ -13,7 +13,6 @@ const configuration = {
   },
   output: {
     path: path.join(__dirname, '../dist'),
-    filename: 'js/[name].js',
     publicPath: '/',
   },
   module: {
@@ -37,7 +36,6 @@ const configuration = {
       style,
       inject: true,
     }),
-    new webpack.HotModuleReplacementPlugin(),
   ],
   resolve: {
     modules: [path.resolve('./src'), path.resolve('./node_modules')],
@@ -55,6 +53,11 @@ const developmentConfig = {
       './src/index.js',
     ],
   },
+  output: {
+    ...configuration.output,
+    filename: 'js/[name].[hash].js',
+  },
+  plugins: [...configuration.plugins, new webpack.HotModuleReplacementPlugin()],
   mode: 'development',
   devtool: 'source-map',
 };
@@ -62,7 +65,15 @@ const developmentConfig = {
 const productionConfig = {
   ...configuration,
   mode: 'production',
-  devtool: 'none',
+  output: {
+    ...configuration.output,
+    filename: 'js/[name].[contenthash].js',
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
 };
 
 module.exports =
