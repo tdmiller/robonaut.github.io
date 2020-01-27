@@ -10,7 +10,6 @@ import {
 import PropTypes from 'prop-types';
 import React from 'react';
 
-// import { Stars } from '../components';
 import {
   Avatar,
   JobTitle,
@@ -22,14 +21,6 @@ import {
   ProfileMe,
 } from '../style/profile';
 import { ProfileContainer } from '../style/profile';
-
-// const languageStars = {
-//   Native: 5,
-//   Good: 4,
-//   Moderate: 3,
-//   Basic: 2,
-//   Beginner: 1,
-// };
 
 const Profile = ({ profile = {} }) => {
   const { picture = '', name = '', label = '', profiles = [], email } = profile;
@@ -66,39 +57,8 @@ const Profile = ({ profile = {} }) => {
           {profile.url.split('/').slice(-1)[0]}
         </ProfileContactLink>
       ))}
-      {/* <ProfileContactLink href={location.link} target="_blank">
-        <ProfileContactIcon path={iconPaths.address} />
-        {location.address}, <br />
-        {location.postalCode} {location.city} ({location.countryCode})
-      </ProfileContactLink> */}
     </ProfileContactContainer>
   );
-
-  // const renderLanguages = () => (
-  //   <>
-  //     <ProfileLanguages>
-  //       {languages.map(l => (
-  //         <>
-  //           <ProfileLanguage key={`language-${l.language}`}>
-  //             {l.language}
-  //           </ProfileLanguage>
-  //           <Stars
-  //             key={`language-${l.language}-stars`}
-  //             rating={languageStars[l.fluency]}
-  //           />
-  //         </>
-  //       ))}
-  //     </ProfileLanguages>
-  //     <ProfileStars>
-  //       {languages.map(l => (
-  //         <Stars
-  //           key={`language-${l.language}-stars`}
-  //           rating={languageStars[l.fluency]}
-  //         />
-  //       ))}
-  //     </ProfileStars>
-  //   </>
-  // );
 
   return (
     <ProfileContainer>
