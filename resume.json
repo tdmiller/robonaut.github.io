@@ -37,11 +37,11 @@
       "summary": "Sentiance is a data science company turning IOT sensor data into rich insights about people’s behavior and real-time context. Sentiance context intelligence enables solutions for lifestyle based insurance, contextual marketing & commerce, smart mobility, connected health, smart home, smart city and connected car.",
       "highlights": [
         {
-          "title": "Aaqua",
+          "title": "",
           "summary": "I led a team of full stack engineers to create a new fandom centric social network. I was responsible for delivering a brand new mobile app (TypeScript, Redux, Apollo) and a public graphQL API (TypeScript, Koa, Apollo) backed by a Neo4j graph database. In both frontend and backend projects we attained 100% code coverage and a continuous CICD pipeline delivering multiple automated deploys every day. This way our team was consistently able to support an ever growing feature set (social login, friending, commenting, picture upload, notifications, ...)"
         },
         {
-          "title": "Driver Coaching",
+          "title": "",
           "summary": "To create a contextual coaching platform, I wrote the graphQL API and created the database design (PostgreSQL). Together with our team I integrated this API with other internal services using Apache Kafka."
         },
         {
@@ -158,16 +158,16 @@
       "name": "Programming Languages",
       "keywords": [
         { "name": "Javascript", "stars": 5 },
-        { "name": "HTML/CSS", "stars": 5},
+        { "name": "HTML/CSS", "stars": 5 },
         { "name": "TypeScript", "stars": 4 },
         { "name": "Python", "stars": 3 },
         { "name": "Ruby", "stars": 3 },
-        { "name": "SQL", "stars": 3},
+        { "name": "SQL", "stars": 3 },
         { "name": "Java", "stars": 2 },
         { "name": "C#", "stars": 2 },
-        { "name": "PHP", "stars": 2},
-        { "name": "ObjectiveC", "stars": 1},
-        { "name": "GoLang", "stars": 1}
+        { "name": "PHP", "stars": 2 },
+        { "name": "ObjectiveC", "stars": 1 },
+        { "name": "GoLang", "stars": 1 }
       ]
     },
     {
@@ -183,7 +183,7 @@
         { "name": "Microservices", "stars": 4 },
         { "name": "UI/UX", "stars": 3 },
         { "name": "Database Design", "stars": 3 },
-        { "name": "Serverless", "stars":  3}
+        { "name": "Serverless", "stars": 3 }
       ]
     },
     {
@@ -233,7 +233,7 @@
     {
       "name": "Mobile Applications",
       "keywords": [
-        { "name": "Fastlane", "stars": 5},
+        { "name": "Fastlane", "stars": 5 },
         { "name": "Push Notifications", "stars": 5 },
         { "name": "Analytics", "stars": 5 },
         { "name": "Build Schemes & Flavors", "stars": 4 },
@@ -260,6 +260,18 @@
     }
   ],
   "references": [
+    {
+      "name": "Filip Van Tittelboom",
+      "relation": "worked with Ilja in different groups",
+      "url": "https://www.linkedin.com/in/filipvantittelboom/",
+      "reference": "Ilja is a gifted Full Stack Engineer and brought lots of maturity to the team. He has a deep understanding of the whole software development lifecycle and set out to build a solid exemplary pipeline. He should not only join your team, he should lead it."
+    },
+    {
+      "name": "Jiri Crispeyn",
+      "relation": "worked with Ilja in the same group",
+      "url": "https://www.linkedin.com/in/jiricrispeyn/",
+      "reference": "Ilja & I built the Full Stack Engineering team at Sentiance. He was highly involved in hiring and mentoring engineers, introducing best practices, making sure our software standards were excellent, setting up software architecture, and successfully shipping several products. Ilja is exceptionally skilled in JavaScript, which allows him to apply this knowledge on multiple layers of software architecture. I can only conclude that Ilja is truly one of the best Full Stack Engineers I've ever worked with."
+    },
     {
       "name": "Patrick Debois",
       "relation": "managed Ilja directly as CTO of zender.tv",
