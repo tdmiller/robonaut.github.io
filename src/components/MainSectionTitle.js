@@ -1,5 +1,5 @@
 import {
-  mdiAccountCardDetails,
+  mdiCardAccountDetails,
   mdiCodeTagsCheck,
   mdiDomain,
   mdiHeart,
@@ -13,7 +13,7 @@ import React from 'react';
 import { MainSectionTitle, MainSectionTitleIcon } from '../style';
 
 const iconMap = {
-  about: mdiAccountCardDetails,
+  about: mdiCardAccountDetails,
   work: mdiDomain,
   skills: mdiCodeTagsCheck,
   education: mdiSchool,

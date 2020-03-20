@@ -1,8 +1,8 @@
 import {
   mdiEmailOutline,
-  mdiGithubCircle,
+  mdiGithub,
   mdiHomeMapMarker,
-  mdiLinkedinBox,
+  mdiLinkedin,
   mdiPhone,
   mdiSoundcloud,
   mdiTwitterCircle,
@@ -25,8 +25,8 @@ import { ProfileContainer } from '../style/profile';
 const Profile = ({ profile = {} }) => {
   const { picture = '', name = '', label = '', profiles = [], email } = profile;
   const iconPaths = {
-    github: mdiGithubCircle,
-    linkedin: mdiLinkedinBox,
+    github: mdiGithub,
+    linkedin: mdiLinkedin,
     twitter: mdiTwitterCircle,
     email: mdiEmailOutline,
     soundcloud: mdiSoundcloud,
