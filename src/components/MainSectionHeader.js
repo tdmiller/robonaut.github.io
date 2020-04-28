@@ -11,7 +11,7 @@ import {
   MainSectionHeaderTitleRightContainer,
 } from '../style';
 
-const getUrlProps = url => {
+const getUrlProps = (url) => {
   if (url) {
     return {
       as: 'a',

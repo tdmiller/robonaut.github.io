@@ -47,8 +47,9 @@ const WorkExperience = ({ experience, isFirst }) => (
   <WorkExperienceContainer isFirst={isFirst}>
     <WorkExperienceHeader
       titleLeft={experience.position}
-      subtitleLeft={`${experience.startDate} - ${experience.endDate ||
-        'present'}`}
+      subtitleLeft={`${experience.startDate} - ${
+        experience.endDate || 'present'
+      }`}
       titleRight={experience.company}
       subtitleRight={experience.website}
       rightUrl={experience.website}

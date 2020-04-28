@@ -59,12 +59,12 @@ export const HighlightIcon = styled(Icon)(() => ({
   width: '2rem',
 }));
 
-export const Star = styled(Icon)(props => ({
+export const Star = styled(Icon)((props) => ({
   fill: props.fill,
   width: '1rem',
 }));
 
-export const Link = styled.a(props => ({
+export const Link = styled.a((props) => ({
   textDecoration: 'none',
   color: props.color,
   '&:hover': {
@@ -75,7 +75,7 @@ export const Link = styled.a(props => ({
   },
 }));
 
-export const MainSectionHeaderContainer = styled.div(props => ({
+export const MainSectionHeaderContainer = styled.div((props) => ({
   display: 'flex',
   backgroundColor: colors.whiteDarker,
   padding: 8,
@@ -93,7 +93,7 @@ export const MainSectionHeaderTitleLeft = styled.div(() => ({
   color: colors.navy,
 }));
 
-export const MainSectionHeaderSubtitleLeft = styled.div(props => ({
+export const MainSectionHeaderSubtitleLeft = styled.div((props) => ({
   color: colors.grey,
   marginTop: 4,
   textDecoration: 'none',

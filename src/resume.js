@@ -68,7 +68,7 @@ Resume.propTypes = {
   data: PropTypes.object,
 };
 
-export const renderHtml = data => {
+export const renderHtml = (data) => {
   const app = renderToString(<Resume data={data} />);
 
   return { app };

@@ -10,7 +10,7 @@ export const WorkExperienceContainer = styled.div(({ isFirst = false }) => ({
   marginTop: isFirst ? 0 : '2rem',
 }));
 
-export const WorkExperienceSummary = styled.div(props => ({
+export const WorkExperienceSummary = styled.div((props) => ({
   marginBottom: props.removeMarginBottom ? 0 : '1rem',
   fontStyle: 'italic',
 }));
@@ -19,7 +19,7 @@ export const WorkExperienceContentContainer = styled.div(() => ({}));
 
 export const WorkExperienceHeader = styled(MainSectionHeader)(() => ({}));
 
-export const WorkExperienceHighlightContainer = styled.div(props => ({
+export const WorkExperienceHighlightContainer = styled.div((props) => ({
   display: 'flex',
   alignItems: 'center',
   marginBottom: props.isLast ? 0 : '1rem',

@@ -47,7 +47,7 @@ const Profile = ({ profile = {} }) => {
         <ProfileContactIcon path={iconPaths.email} />
         {email}
       </ProfileContactLink>
-      {profiles.map(profile => (
+      {profiles.map((profile) => (
         <ProfileContactLink
           key={`profile-${profile.network}</ProfileLinks>]}`}
           href={profile.url}
