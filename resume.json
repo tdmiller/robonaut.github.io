@@ -30,10 +30,19 @@
   },
   "work": [
     {
+      "company": "Nokia Bell Labs",
+      "position": "Software Engineer",
+      "website": "https://www.bell-labs.com",
+      "startDate": "2020/05/01",
+      "summary": "Developing disruptive research for the next phase of human existence.",
+      "highlights": []
+    },
+    {
       "company": "Sentiance",
       "position": "Senior Full Stack Engineer",
       "website": "https://www.sentiance.com",
       "startDate": "2018/04/10",
+      "endDate": "2020-02-07",
       "summary": "Sentiance is a data science company turning IOT sensor data into rich insights about people’s behavior and real-time context. Sentiance context intelligence enables solutions for lifestyle based insurance, contextual marketing & commerce, smart mobility, connected health, smart home, smart city and connected car.",
       "highlights": [
         {
